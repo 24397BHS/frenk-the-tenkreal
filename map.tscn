@@ -33,3 +33,11 @@ material = SubResource("StandardMaterial3D_c7s6e")
 
 [node name="Node3D" parent="." unique_id=892926862 instance=ExtResource("1_c7s6e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01123333, 9.317256, 0.07177949)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1145221134]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, -61.360405, 11.966297, 16.185513)
+use_collision = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=829188945]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 13.439279, 71.53608)
+use_collision = true
