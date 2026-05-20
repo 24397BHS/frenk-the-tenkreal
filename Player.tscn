@@ -927,8 +927,12 @@ mesh = SubResource("ArrayMesh_4jeul")
 transform = Transform3D(0.99999994, 0, 2.842171e-14, 1.6940659e-21, 1, -3.5527082e-15, -2.842171e-14, -3.5527086e-15, 0.99999994, 0.7375151, -0.047935307, 0.01754422)
 mesh = SubResource("ArrayMesh_32qwp")
 
-[node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower" unique_id=400164968]
-transform = Transform3D(-1.1318786e-07, 0.23505956, -0.3158281, -3.3403644e-09, 0.31582797, 0.23505965, 0.39370096, 7.025859e-08, -8.880527e-08, -2.0920048, 1.1428378, 0.32053885)
+[node name="neck" type="Node3D" parent="Body/Сombat_Tower" unique_id=938750213]
+transform = Transform3D(1, 0, 0, 0, 1, -1.4210849e-14, 0, 5.082197e-21, 1, -0.19519053, 0.45550716, 0.35707977)
+
+[node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/neck" unique_id=400164968]
+transform = Transform3D(-1.7209217e-08, -8.4703295e-22, -0.393701, 1.9319968e-21, 0.39370084, -5.596681e-16, 0.393701, 8.881786e-15, -1.7209217e-08, 0, 0, 0)
+fov = 70.0
 
 [node name="Wheel02" type="MeshInstance3D" parent="Body" unique_id=447525531]
 transform = Transform3D(0.99999994, 0, 0, -1.6940659e-21, 0.99999994, 5.5905854e-21, 0, -3.5527086e-15, 0.99999994, 3.3312104, 0.31566268, -1.8664348)

@@ -1,8 +1,8 @@
 extends VehicleBody3D
 
 const ENGINE_POWER =1500
-const SENS = 0.003
-var rotation_speed: float = 5.0
+var SENS: float = 0.005
+var rotation_speed: float = 3.0
 var turret_rot = 0
 @onready var left_wheels = [$Leftwheel1, $Leftwheel2, $Leftwheel3, $Leftwheel4, 
 							$Leftwheel5, $Leftwheel6, $Leftwheel7]
@@ -11,17 +11,20 @@ var turret_rot = 0
  
 @onready var right_tread = $Body/RightTread
 @onready var left_tread = $Body/LeftTread
-@onready var camera = $"Body/Сombat_Tower/Camera3D"
+@onready var camera = $"Body/Сombat_Tower/neck/Camera3D"
+@onready var neck = $"Body/Сombat_Tower/neck"
 @onready var turret =$"Body/Сombat_Tower"
+
+var target_yaw: float = 0.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	target_yaw = turret.rotation.y
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 #turret move thing idk
-func _unhandled_input(event):
-	
+func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
-		turret_rot(-event.relative.x)
+		target_yaw -= event.relative.x * SENS
 		
 		
 		
@@ -49,4 +52,8 @@ func _process(delta: float) -> void:
 			wheel.engine_force = ENGINE_POWER * move_dir
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.001, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.001, 0, 0)
-		
+		turret.rotation.y = rotate_toward(
+			turret.rotation.y, 
+			target_yaw, 
+			rotation_speed * delta
+)
