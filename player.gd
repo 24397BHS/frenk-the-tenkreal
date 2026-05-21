@@ -1,8 +1,8 @@
 extends VehicleBody3D
 
 const ENGINE_POWER =1500
-var SENS: float = 0.005
-var rotation_speed: float = 1.5
+var SENS: float = 0.0002
+var ELEV: float = 0.0001
 var turret_rot = 0
 var TotAmmo = 25
 var ammo = 1
@@ -15,12 +15,22 @@ var ammo = 1
 @onready var left_tread = $Body/LeftTread
 @onready var camera = $"Body/Сombat_Tower/neck/Camera3D"
 @onready var neck = $"Body/Сombat_Tower/neck"
-@onready var turret =$"Body/Сombat_Tower"
+@onready var turret = $"Body/Сombat_Tower"
+@onready var manlet = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))"
 
 var target_yaw: float = 0.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		turret.rotate_y(-event.relative.x * SENS)
+		
+		manlet.rotate_z(-event.relative.y * ELEV)
+		manlet.rotation.z =clamp(manlet.rotation.z, deg_to_rad(-10), deg_to_rad(15))
+		
+		var freelook = Input.get("Freelook")
 
 
 
@@ -48,16 +58,3 @@ func _process(delta: float) -> void:
 			wheel.engine_force = ENGINE_POWER * move_dir
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.001, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.001, 0, 0)
-		
-		var camera = get_viewport().get_camera_3d()
-		var mouse_pos = get_viewport().get_mouse_position()
-		var ray_origin = camera.project_ray_origin(mouse_pos)
-		var ray_normal = camera.project_ray_normal(mouse_pos)
-		var interaction_plane = Plane(Vector3.UP, turret.global_position.y)
-		var target_position = interaction_plane.intersects_ray(ray_origin, ray_normal)
-		if target_position:
-			var target_transform = turret.global_transform.looking_at(target_position, Vector3.UP)
-			var current_quat = turret.global_transform.basis.get_rotation_quaternion
-			var target_quat = target_transform.basis.get_rotation_quaternion()
-			var limited_quat = current_quat.rotate_to(target_quat, rotation_speed * delta)
-			turret.global_transform.basis = Basis(limited_quat)
