@@ -30,6 +30,8 @@ func _input(event: InputEvent) -> void:
 		manlet.rotate_z(-event.relative.y * ELEV)
 		manlet.rotation.z =clamp(manlet.rotation.z, deg_to_rad(-10), deg_to_rad(15))
 		
+		neck.rotate_z(-event.relative.y * ELEV)
+		neck.rotation.z =clamp(neck.rotation.z, deg_to_rad(-10), deg_to_rad(15))
 		var freelook = Input.get("Freelook")
 
 
