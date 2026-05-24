@@ -3,6 +3,7 @@ extends VehicleBody3D
 const ENGINE_POWER =1500
 var SENS: float = 0.0002
 var ELEV: float = 0.0001
+var look: = 0.003
 var turret_rot = 0
 var TotAmmo = 25
 var ammo = 1
@@ -19,20 +20,21 @@ var ammo = 1
 @onready var manlet = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))"
 
 var target_yaw: float = 0.0
+
+var is_free_looking: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		turret.rotate_y(-event.relative.x * SENS)
+	if Input.is_action_just_pressed("Freelook"):
+		is_free_looking = true
 		
-		manlet.rotate_z(-event.relative.y * ELEV)
-		manlet.rotation.z =clamp(manlet.rotation.z, deg_to_rad(-10), deg_to_rad(15))
+	if Input.is_action_just_released("Freelook"):
+		is_free_looking = false
+		neck.rotation = Vector3.ZERO
 		
-		neck.rotate_z(-event.relative.y * ELEV)
-		neck.rotation.z =clamp(neck.rotation.z, deg_to_rad(-10), deg_to_rad(15))
-		var freelook = Input.get("Freelook")
+
 
 
 
