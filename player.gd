@@ -3,7 +3,7 @@ extends VehicleBody3D
 const ENGINE_POWER =1500
 var SENS: float = 0.0002
 var ELEV: float = 0.0001
-var look: = 0.003
+var look: = 0.0003
 var turret_rot = 0
 var TotAmmo = 25
 var ammo = 1
@@ -26,7 +26,7 @@ var is_free_looking: bool = false
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-func _input(event: InputEvent) -> void:
+func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Freelook"):
 		is_free_looking = true
 		
@@ -34,13 +34,7 @@ func _input(event: InputEvent) -> void:
 		is_free_looking = false
 		neck.rotation = Vector3.ZERO
 		
-
-
-
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+		
 	var steer = Input.get_axis("right", "left")
 	var move_dir = Input.get_axis("down", "up")
 	if steer != 0 and move_dir !=0:
@@ -62,3 +56,28 @@ func _process(delta: float) -> void:
 			wheel.engine_force = ENGINE_POWER * move_dir
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.001, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.001, 0, 0)
+		
+		
+		
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		if is_free_looking:
+			neck.rotate_y(-event.relative.x * look)
+			camera.rotate_z(-event.relative.y * look)
+			camera.rotation.z = clamp(neck.rotation.z, deg_to_rad(-15), deg_to_rad(30))
+		else:
+			turret.rotate_y(-event.relative.x * SENS)
+			manlet.rotate_z(-event.relative.y * ELEV)
+			manlet.rotation.z = clamp(manlet.rotation.z, deg_to_rad(-10), deg_to_rad(15))
+			camera.rotation.x = manlet.rotation.z
+			neck.rotation.y = 0
+	
+	
+
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+	
+	
+	
+	

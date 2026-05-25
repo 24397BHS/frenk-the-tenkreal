@@ -917,7 +917,7 @@ material_override = SubResource("StandardMaterial3D_tdg3f")
 mesh = SubResource("ArrayMesh_3nwih")
 
 [node name="Сombat_Tower" type="MeshInstance3D" parent="Body" unique_id=196166008]
-transform = Transform3D(0.9999996, -1.6940659e-21, 0, 0, 0.9999999, 5.5905834e-21, 0, -1.7763563e-14, 0.9999996, 1.3009267, 1.5038776, -0.87254184)
+transform = Transform3D(0.9999996, -8.4703295e-22, -2.842171e-14, 0, 0.9999999, 3.552719e-15, 2.842171e-14, -2.1316277e-14, 0.9999996, 1.3009267, 1.5038776, -0.87254184)
 mesh = SubResource("ArrayMesh_dakaw")
 
 [node name="Rolling_ Armour_Mlya))" type="MeshInstance3D" parent="Body/Сombat_Tower" unique_id=1667273995]
