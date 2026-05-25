@@ -928,6 +928,10 @@ mesh = SubResource("ArrayMesh_4jeul")
 transform = Transform3D(0.9999998, 9.313226e-10, 2.842171e-14, -1.8626451e-09, 0.9999999, -5.3290705e-15, -5.684342e-14, 3.1086245e-15, 0.99999994, 0.73751515, -0.047935247, 0.017544221)
 mesh = SubResource("ArrayMesh_32qwp")
 
+[node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))" unique_id=1092109173]
+transform = Transform3D(-1.7209203e-08, -1.7209194e-08, -0.3937008, 1.7209207e-08, 0.3937007, -1.720919e-08, 0.39370084, -1.7209203e-08, -1.7209203e-08, -0.034253776, -0.13608229, 0.25285435)
+fov = 25.0
+
 [node name="neck" type="Node3D" parent="Body/Сombat_Tower" unique_id=938750213]
 transform = Transform3D(1, 0, 0, 0, 1, -1.4210849e-14, 0, 5.082197e-21, 1, -0.19519053, 0.45550716, 0.35707977)
 

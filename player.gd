@@ -7,6 +7,7 @@ var look: = 0.0003
 var turret_rot = 0
 var TotAmmo = 25
 var ammo = 1
+var is_scoping: bool = false
 @onready var left_wheels = [$Leftwheel1, $Leftwheel2, $Leftwheel3, $Leftwheel4, 
 							$Leftwheel5, $Leftwheel6, $Leftwheel7]
 @onready var right_wheels = [$Rightwheel1, $Rightwheel2, $Rightwheel3, $Rightwheel4, 
@@ -15,6 +16,7 @@ var ammo = 1
 @onready var right_tread = $Body/RightTread
 @onready var left_tread = $Body/LeftTread
 @onready var camera = $"Body/Сombat_Tower/neck/Camera3D"
+@onready var scope = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))/Camera3D"
 @onready var neck = $"Body/Сombat_Tower/neck"
 @onready var turret = $"Body/Сombat_Tower"
 @onready var manlet = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))"
@@ -25,6 +27,26 @@ var is_free_looking: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	if camera:
+		camera.current = true
+		scope.current = false
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("scope"):
+		# Toggle the boolean variable (true becomes false, false becomes true)
+		is_scoping = !is_scoping
+		
+		# Call the function to update the cameras based on that variable
+		update_cameras()
+func update_cameras() -> void:
+	if camera and scope:
+		if is_scoping:
+			scope.current = true
+			camera.current = false
+		else:
+			camera.current = true
+			scope.current = false
+
+
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Freelook"):
