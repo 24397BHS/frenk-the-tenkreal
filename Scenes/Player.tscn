@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://cgvrbq71cwoig"]
 
-[ext_resource type="Script" uid="uid://cissjou6ifpq6" path="res://player.gd" id="1_kne1u"]
+[ext_resource type="Script" uid="uid://cissjou6ifpq6" path="res://Scripts/player.gd" id="1_kne1u"]
 [ext_resource type="Texture2D" uid="uid://2ybo27ree5r5" path="res://Shermanfiles/t1.jpg" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://bykno47ar1sgg" path="res://Shermanfiles/4abd7b54 copy.jpg" id="1_xhfnw"]
-[ext_resource type="Script" uid="uid://dluwsqpgojlkd" path="res://canvas_layer.gd" id="4_e80uo"]
+[ext_resource type="Script" uid="uid://dluwsqpgojlkd" path="res://Scripts/canvas_layer.gd" id="4_e80uo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kne1u"]
 albedo_texture = ExtResource("1_kpjcp")
@@ -927,6 +927,9 @@ mesh = SubResource("ArrayMesh_4jeul")
 [node name="gunpoint_mlya)))" type="MeshInstance3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))" unique_id=1814409674]
 transform = Transform3D(0.9999998, 9.313226e-10, 2.842171e-14, -1.8626451e-09, 0.9999999, -5.3290705e-15, -5.684342e-14, 3.1086245e-15, 0.99999994, 0.73751515, -0.047935247, 0.017544221)
 mesh = SubResource("ArrayMesh_32qwp")
+
+[node name="Bulletspawn" type="Node3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))" unique_id=303821918]
+transform = Transform3D(0.9999998, -1.110223e-16, 0, 2.220446e-16, 0.9999998, 6.661395e-16, 0, -3.2196417e-15, 0.9999998, 0.69828033, 0, 2.4971087e-07)
 
 [node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))" unique_id=1092109173]
 transform = Transform3D(-1.7209203e-08, -1.7209194e-08, -0.3937008, 1.7209207e-08, 0.3937007, -1.720919e-08, 0.39370084, -1.7209203e-08, -1.7209203e-08, -0.034253776, -0.13608229, 0.25285435)

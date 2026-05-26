@@ -1,5 +1,7 @@
 extends VehicleBody3D
 
+
+const ShellAP = preload("res://Scenes/ShellAp.tscn")
 const ENGINE_POWER =1500
 var SENS: float = 0.0002
 var ELEV: float = 0.0001
@@ -20,6 +22,7 @@ var is_scoping: bool = false
 @onready var neck = $"Body/Сombat_Tower/neck"
 @onready var turret = $"Body/Сombat_Tower"
 @onready var manlet = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))"
+@onready var barrel: Node3D = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))/Bulletspawn"
 
 var target_yaw: float = 0.0
 
@@ -94,12 +97,12 @@ func _input(event: InputEvent) -> void:
 			camera.rotation.x = manlet.rotation.z
 			neck.rotation.y = 0
 	
-	
+	elif event is InputEventMouseButton:
+		if Input.is_action_just_pressed("fire"):
+			fire()
 
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-	
-	
-	
-	
+func fire() :
+	var new_shell:AP = ShellAP.instantiate()
+	get_tree().current_scene.add_child(new_shell)
+	new_shell.initialize(barrel.global_position,barrel.global_basis.x, 800.0)
