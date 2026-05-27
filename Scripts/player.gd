@@ -7,8 +7,19 @@ var SENS: float = 0.0002
 var ELEV: float = 0.0001
 var look: = 0.0003
 var turret_rot = 0
+
+
+
+
+
 var TotAmmo = 25
 var ammo = 1
+
+
+
+
+
+
 var is_scoping: bool = false
 @onready var left_wheels = [$Leftwheel1, $Leftwheel2, $Leftwheel3, $Leftwheel4, 
 							$Leftwheel5, $Leftwheel6, $Leftwheel7]
@@ -23,6 +34,7 @@ var is_scoping: bool = false
 @onready var turret = $"Body/Сombat_Tower"
 @onready var manlet = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))"
 @onready var barrel: Node3D = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))/Bulletspawn"
+@onready var timer = $CooldownTimer
 
 var target_yaw: float = 0.0
 
@@ -98,7 +110,7 @@ func _input(event: InputEvent) -> void:
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton:
-		if Input.is_action_just_pressed("fire"):
+		if Input.is_action_just_pressed("fire")and timer.is_stopped():
 			fire()
 
 
@@ -106,3 +118,4 @@ func fire() :
 	var new_shell:AP = ShellAP.instantiate()
 	get_tree().current_scene.add_child(new_shell)
 	new_shell.initialize(barrel.global_position,barrel.global_basis.x, 800.0)
+	timer.start()
