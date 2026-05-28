@@ -14,7 +14,8 @@ var turret_rot = 0
 
 var TotAmmo = 25
 var ammo = 1
-
+var Maxhealth = 100
+var health = 100
 
 
 
@@ -109,7 +110,7 @@ func _input(event: InputEvent) -> void:
 			camera.rotation.x = manlet.rotation.z
 			neck.rotation.y = 0
 	
-	elif event is InputEventMouseButton:
+	elif event is InputEventMouseButton or InputEventKey:
 		if Input.is_action_just_pressed("fire")and timer.is_stopped():
 			fire()
 

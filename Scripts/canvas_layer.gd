@@ -2,8 +2,8 @@ extends CanvasLayer
 
 @onready var player: VehicleBody3D = $".."
 
-@onready var label: Label = $Control/Label
-
+@onready var Ammo: Label = $Control/Label
+@onready var Health: ProgressBar = $Control/ProgressBar
 
 func _process(delta: float) -> void:
-	label.text = str(player.ammo) + "/" + str(player.TotAmmo)
+	Ammo.text = str(player.ammo) + "/" + str(player.TotAmmo)
