@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cv0ykkjiuvcer"]
 
 [ext_resource type="PackedScene" uid="uid://cgvrbq71cwoig" path="res://Scenes/Player.tscn" id="1_ci6au"]
+[ext_resource type="PackedScene" uid="uid://nph845663xde" path="res://Scenes/Badguytest.tscn" id="2_26yhd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c7s6e"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -41,3 +42,6 @@ use_collision = true
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=829188945]
 transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 13.439279, 71.53608)
 use_collision = true
+
+[node name="Node3D2" parent="." unique_id=1638260609 instance=ExtResource("2_26yhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.576397, 0.5, 41.338116)

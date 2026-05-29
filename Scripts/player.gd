@@ -20,7 +20,6 @@ var health = 100
 
 
 
-
 var is_scoping: bool = false
 @onready var left_wheels = [$Leftwheel1, $Leftwheel2, $Leftwheel3, $Leftwheel4, 
 							$Leftwheel5, $Leftwheel6, $Leftwheel7]
@@ -61,6 +60,9 @@ func update_cameras() -> void:
 		else:
 			camera.current = true
 			scope.current = false
+func _Damage(Damage: float) -> void:
+	health -= Damage 
+
 
 
 
@@ -111,12 +113,16 @@ func _input(event: InputEvent) -> void:
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton or InputEventKey:
-		if Input.is_action_just_pressed("fire")and timer.is_stopped():
+		if Input.is_action_just_pressed("fire")and timer.is_stopped() and TotAmmo > 0:
 			fire()
-
+		
+	if timer.is_stopped() and TotAmmo > 0:
+		ammo = 1
 
 func fire() :
 	var new_shell:AP = ShellAP.instantiate()
 	get_tree().current_scene.add_child(new_shell)
 	new_shell.initialize(barrel.global_position,barrel.global_basis.x, 800.0)
+	ammo -= 1
+	TotAmmo -= 1
 	timer.start()

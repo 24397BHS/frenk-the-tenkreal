@@ -7,3 +7,4 @@ extends CanvasLayer
 
 func _process(delta: float) -> void:
 	Ammo.text = str(player.ammo) + "/" + str(player.TotAmmo)
+	Health.value = player.health

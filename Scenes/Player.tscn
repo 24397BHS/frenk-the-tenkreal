@@ -917,7 +917,7 @@ material_override = SubResource("StandardMaterial3D_tdg3f")
 mesh = SubResource("ArrayMesh_3nwih")
 
 [node name="Сombat_Tower" type="MeshInstance3D" parent="Body" unique_id=196166008]
-transform = Transform3D(0.9999996, -8.4703295e-22, -2.842171e-14, 0, 0.9999999, 3.552719e-15, 2.842171e-14, -2.1316277e-14, 0.9999996, 1.3009267, 1.5038776, -0.87254184)
+transform = Transform3D(0.9999996, -8.4703295e-22, -5.684342e-14, 0, 0.9999999, 7.105433e-15, 5.684342e-14, -2.486899e-14, 0.9999996, 1.3009267, 1.5038776, -0.87254184)
 mesh = SubResource("ArrayMesh_dakaw")
 
 [node name="Rolling_ Armour_Mlya))" type="MeshInstance3D" parent="Body/Сombat_Tower" unique_id=1667273995]
@@ -1117,12 +1117,13 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/Control" unique_id=1216780779]
 layout_mode = 0
-offset_left = 1046.0
-offset_top = 624.0
+offset_left = 978.0
+offset_top = 597.0
 offset_right = 1152.0
 offset_bottom = 648.0
 text = "Ammo"
 horizontal_alignment = 2
+vertical_alignment = 2
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Control" unique_id=1140530346]
 layout_mode = 1
@@ -1130,7 +1131,7 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_top = -27.0
-offset_right = 352.0
+offset_right = 197.0
 grow_vertical = 0
 step = 1.0
 
