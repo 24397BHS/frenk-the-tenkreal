@@ -16,3 +16,5 @@ mesh = SubResource("BoxMesh_or3t6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=305314259]
 shape = SubResource("ConvexPolygonShape3D_vu7ln")
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=1353432415]

@@ -28,7 +28,7 @@ mesh = SubResource("BoxMesh_tpwph")
 [node name="DetectionZone" type="Area3D" parent="." unique_id=1028428002]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DetectionZone" unique_id=1480514707]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 shape = SubResource("SphereShape3D_88tcj")
 
 [node name="Muzzle" type="Marker3D" parent="." unique_id=807978811]

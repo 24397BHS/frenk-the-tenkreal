@@ -1,6 +1,5 @@
 extends StaticBody3D
 
-# Load your bullet scene
 @onready var bullet_scene = preload("res://Scenes/badguybullettest.tscn")
 @onready var shoot_timer = $ShootTimer
 @onready var muzzle = $Muzzle
@@ -9,41 +8,65 @@ extends StaticBody3D
 var player_in_range = false
 var player_target = null
 
-# How fast the enemy aims at the player
 @export var rotation_speed: float = 5.0 
 
+# Match this value to your bullet script's speed and gravity!
+@export var bullet_speed: float = 50.0
+@export var bullet_gravity: float = 9.8
+
 func _ready():
-	# Connect signals for detection
 	detection_zone.connect("body_entered", Callable(self, "_on_player_entered"))
 	detection_zone.connect("body_exited", Callable(self, "_on_player_exited"))
 	shoot_timer.connect("timeout", Callable(self, "_shoot"))
 
 func _physics_process(delta):
 	if player_target:
-		# Smoothly rotate the enemy to face the player
-		var target_transform = transform.looking_at(player_target.global_position, Vector3.UP)
+		# 1. Calculate the predicted target position (Leading + Gravity Compensation)
+		var predicted_position = get_predicted_shoot_position()
+		
+		# 2. Smoothly rotate the enemy to face the predicted position
+		var target_transform = transform.looking_at(predicted_position, Vector3.UP)
 		transform = transform.interpolate_with(target_transform, rotation_speed * delta)
 		
-		# Start shooting if the timer isn't running
 		if shoot_timer.is_stopped():
 			shoot_timer.start()
 
+# New function to calculate where the enemy should actually aim
+func get_predicted_shoot_position() -> Vector3:
+	var target_pos = player_target.global_position
+	
+	# If the player has a velocity property (CharacterBody3D standard), use it.
+	# Otherwise, default to Vector3.ZERO
+	var player_velocity = Vector3.ZERO
+	if "velocity" in player_target:
+		player_velocity = player_target.velocity
+	elif "linear_velocity" in player_target: # For RigidBody3D
+		player_velocity = player_target.linear_velocity
+
+	# Calculate distance and estimate bullet travel time
+	var distance = global_position.distance_to(target_pos)
+	var travel_time = distance / bullet_speed
+	
+	# 1. Lead the target based on their current movement velocity
+	var lead_aim = target_pos + (player_velocity * travel_time)
+	
+	# 2. Compensate for bullet drop
+	# Formula derived from physics: d = 0.5 * g * t^2
+	var drop_compensation = 0.5 * bullet_gravity * (travel_time * travel_time)
+	
+	# Add the compensation to the Y axis so the enemy aims higher
+	lead_aim.y += drop_compensation
+	
+	return lead_aim
+
 func _shoot():
 	if player_target:
-		# 1. Instantiate the bullet
 		var bullet = bullet_scene.instantiate()
-		
-		# 2. Set the bullet's position and direction based on the Muzzle
 		bullet.global_transform = muzzle.global_transform
-		
-		# 3. Add to the main scene (assuming 'World' is the root node)
 		get_tree().root.add_child(bullet)
-		
-		# 4. Reset the shoot timer for the next shot
 		shoot_timer.start(1.5)
 
 func _on_player_entered(body):
-	# Make sure you set your Player's collision layer/group appropriately!
 	if body.is_in_group("Player"):
 		player_target = body
 		player_in_range = true
