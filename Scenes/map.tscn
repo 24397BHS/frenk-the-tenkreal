@@ -44,4 +44,4 @@ transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 13.439279, 71.53608)
 use_collision = true
 
 [node name="Node3D2" parent="." unique_id=1638260609 instance=ExtResource("2_26yhd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.576397, 0.5, 41.338116)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.576397, 5.611599, 41.338116)

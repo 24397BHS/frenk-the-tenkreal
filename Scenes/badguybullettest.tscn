@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bs0ptc4w3gcg"]
+
+[ext_resource type="Script" uid="uid://bvloikdm18obg" path="res://Scripts/area_3d.gd" id="1_xd3cy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_or3t6"]
+size = Vector3(0.6, 0.6, 0.6)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vu7ln"]
+points = PackedVector3Array(-0.29999998, -0.29999986, -0.29999986, 0.29998615, 0.29999998, 0.29999998, 0.29998615, 0.29999998, -0.29999998, 0.29998615, -0.29999998, 0.29999998, -0.29999998, 0.29999986, 0.29999986, 0.29998615, -0.29999998, -0.29999998, -0.29999998, -0.29999986, 0.29999986, -0.29999998, 0.29999986, -0.29999986)
+
+[node name="Area3D" type="Area3D" unique_id=1371711537]
+script = ExtResource("1_xd3cy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1200362984]
+mesh = SubResource("BoxMesh_or3t6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=305314259]
+shape = SubResource("ConvexPolygonShape3D_vu7ln")

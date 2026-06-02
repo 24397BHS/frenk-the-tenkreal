@@ -5,6 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://bykno47ar1sgg" path="res://Shermanfiles/4abd7b54 copy.jpg" id="1_xhfnw"]
 [ext_resource type="Script" uid="uid://dluwsqpgojlkd" path="res://Scripts/canvas_layer.gd" id="4_e80uo"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_kpjcp"]
+size = Vector3(5, 3, 11.465271)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kne1u"]
 albedo_texture = ExtResource("1_kpjcp")
 
@@ -881,14 +884,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_rh8wt")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_kpjcp"]
-size = Vector3(5, 3, 11.465271)
-
 [node name="Tank" type="VehicleBody3D" unique_id=1924498077]
 mass = 1000.0
 gravity_scale = 3.0
 linear_damp = 0.9
 script = ExtResource("1_kne1u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=434220152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.409096, -0.031585693)
+shape = SubResource("BoxShape3D_kpjcp")
 
 [node name="Body" type="MeshInstance3D" parent="." unique_id=1872773907]
 transform = Transform3D(9.083748e-07, -1.1102691e-07, -2.5399997, 0, 2.54, -1.1102691e-07, 2.5399997, 3.609557e-14, 9.083748e-07, -2.2188494, -2.0788732, -3.2498786)
@@ -1099,10 +1103,6 @@ suspension_stiffness = 50.0
 transform = Transform3D(-1.1102693e-07, 3.7617382e-28, -2.54, 8.605854e-21, 2.54, 0, 2.54, -8.605854e-21, -1.1102693e-07, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_47wu6")
 mesh = SubResource("ArrayMesh_lwxm8")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=434220152]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.409096, -0.031585693)
-shape = SubResource("BoxShape3D_kpjcp")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1974043531]
 script = ExtResource("4_e80uo")
