@@ -1,6 +1,5 @@
 extends Area3D
-
-@export var speed: float = 50.0
+@export var speed: float = 100.0
 @export var bullet_gravity: float = 9.8 
 
 # Make sure this matches the name of your RayCast3D node in the inspector exactly
@@ -46,7 +45,7 @@ func _physics_process(delta):
 func handle_collision(body):
 	if body.is_in_group("Player"):
 		# body.take_damage(10)
-		pass # Replace with your damage code
+		body.take_damage(10) #Replace with your damage code
 		
 	queue_free()
 

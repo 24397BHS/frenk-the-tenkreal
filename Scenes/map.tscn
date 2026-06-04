@@ -45,8 +45,3 @@ use_collision = true
 
 [node name="Node3D2" parent="." unique_id=1638260609 instance=ExtResource("2_26yhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.576397, 5.611599, 41.338116)
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=953399280]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.064331055, 13.353668, 22.146107)
-use_collision = true
-size = Vector3(47.06714, 27.707336, 1)

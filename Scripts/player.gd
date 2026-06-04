@@ -14,8 +14,8 @@ var turret_rot = 0
 
 var TotAmmo = 25
 var ammo = 1
-var Maxhealth = 100
-var health = 100
+@export var Maxhealth = 100
+@export var health = 100
 
 
 
@@ -126,3 +126,12 @@ func fire() :
 	ammo -= 1
 	TotAmmo -= 1
 	timer.start()
+	
+func take_damage(amount: int) -> void:
+	health -= amount
+	
+	if health <= 0:
+		die()
+		
+func die() -> void:
+	queue_free()

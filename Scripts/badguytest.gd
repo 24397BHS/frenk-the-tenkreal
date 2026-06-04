@@ -11,7 +11,7 @@ var player_target = null
 @export var rotation_speed: float = 5.0 
 
 # Match this value to your bullet script's speed and gravity!
-@export var bullet_speed: float = 50.0
+@export var bullet_speed: float = 100.0
 @export var bullet_gravity: float = 9.8
 
 func _ready():
