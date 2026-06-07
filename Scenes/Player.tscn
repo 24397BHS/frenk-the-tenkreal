@@ -943,7 +943,7 @@ fov = 25.0
 transform = Transform3D(1, 0, 0, 0, 1, -1.4210849e-14, 0, 5.082197e-21, 1, -0.19519053, 0.45550716, 0.35707977)
 
 [node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/neck" unique_id=400164968]
-transform = Transform3D(-1.7209217e-08, -8.4703295e-22, -0.393701, 1.9319968e-21, 0.39370084, -5.596681e-16, 0.393701, 8.881786e-15, -1.7209217e-08, 0, 0, 0)
+transform = Transform3D(-1.7209217e-08, 0, -0.393701, 0, 0.39370084, 0, 0.39370102, 0, -1.7209217e-08, 0, 0, 0)
 fov = 70.0
 
 [node name="Wheel02" type="MeshInstance3D" parent="Body" unique_id=447525531]
