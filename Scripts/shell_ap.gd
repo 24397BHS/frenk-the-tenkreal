@@ -19,8 +19,6 @@ func initialize(start_position: Vector3, direction: Vector3, inital_speed: float
 	speed = inital_speed
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
 
 
