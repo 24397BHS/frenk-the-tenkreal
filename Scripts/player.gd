@@ -119,19 +119,22 @@ func _input(event: InputEvent) -> void:
 	if timer.is_stopped() and TotAmmo > 0:
 		ammo = 1
 
-func fire() :
-	var new_shell:AP = ShellAP.instantiate()
+func fire():
+	var new_shell: AP = ShellAP.instantiate()
 	get_tree().current_scene.add_child(new_shell)
-	new_shell.initialize(barrel.global_position,barrel.global_basis.x, 800.0)
+	new_shell.initialize(barrel.global_position, barrel.global_basis.x, 800.0)
+	
+	# ---- NEW: Find the UI node on the player and give it to the bullet ----
+	# This searches the player's direct children for your CanvasLayer node
+	var my_ui = find_child("CanvasLayer", true, false) 
+	if my_ui:
+		new_shell.ui_reference = my_ui
+	# -----------------------------------------------------------------------
+	
+	# Prevent the bullet from hitting yourself
+	if new_shell.has_node("Raycast"):
+		new_shell.get_node("Raycast").add_exception(self)
+		
 	ammo -= 1
 	TotAmmo -= 1
 	timer.start()
-	
-func take_damage(amount: int) -> void:
-	health -= amount
-	
-	if health <= 0:
-		die()
-		
-func die() -> void:
-	queue_free()

@@ -58,4 +58,10 @@ text = "Big Play Button"
 [node name="Spawnpoint" type="Node3D" parent="." unique_id=1379917395]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 28.79122, -24.376804)
 
+[node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("2_26yhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.406452, 2.4999962, 43.166775)
+
+[node name="Badguy2" parent="." unique_id=855417343 instance=ExtResource("2_26yhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.346855, 2.4999962, 39.255474)
+
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_pressed"]
