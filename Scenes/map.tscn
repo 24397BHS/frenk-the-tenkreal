@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cv0ykkjiuvcer"]
 
+[ext_resource type="PackedScene" uid="uid://cgvrbq71cwoig" path="res://Scenes/Player.tscn" id="1_ci6au"]
 [ext_resource type="PackedScene" uid="uid://nph845663xde" path="res://Scenes/Badguytest.tscn" id="2_26yhd"]
-[ext_resource type="Script" uid="uid://b2vs7wxjos8pf" path="res://Scripts/Mainmenusomethingsomehtubg.gd" id="3_p3ir5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c7s6e"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -43,25 +43,11 @@ use_collision = true
 [node name="Node3D2" parent="." unique_id=1638260609 instance=ExtResource("2_26yhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.576397, 5.611599, 41.338116)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=12592204]
-script = ExtResource("3_p3ir5")
-
-[node name="Button" type="Button" parent="CanvasLayer" unique_id=231784093]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 150
-text = "Big Play Button"
-
-[node name="Spawnpoint" type="Node3D" parent="." unique_id=1379917395]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 28.79122, -24.376804)
-
 [node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("2_26yhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.406452, 2.4999962, 43.166775)
 
 [node name="Badguy2" parent="." unique_id=855417343 instance=ExtResource("2_26yhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.346855, 2.4999962, 39.255474)
 
-[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_pressed"]
+[node name="Tank" parent="." unique_id=1924498077 instance=ExtResource("1_ci6au")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6582031, 2.8479648, -76.98008)

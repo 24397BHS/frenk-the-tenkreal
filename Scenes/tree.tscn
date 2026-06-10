@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cqc71u1hxufqu"]
+
+[ext_resource type="PackedScene" uid="uid://228hxxy4p8xf" path="res://Trees/TREE.fbx" id="1_brfkd"]
+
+[node name="Tree" type="Node3D" unique_id=1981360350]
+
+[node name="TREE" parent="." unique_id=1477578524 instance=ExtResource("1_brfkd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009, 0, 0)

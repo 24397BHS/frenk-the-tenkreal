@@ -1,26 +1,19 @@
 extends VehicleBody3D
-
-
+const Menu = preload("res://Scenes/main_menu.tscn")
 const ShellAP = preload("res://Scenes/ShellAp.tscn")
-const ENGINE_POWER =1500
+const ENGINE_POWER = 1500
 var SENS: float = 0.0002
 var ELEV: float = 0.0001
-var look: = 0.0003
+var look: float = 0.0003
 var turret_rot = 0
-
-
-
-
 
 var TotAmmo = 25
 var ammo = 1
 @export var Maxhealth = 100
 @export var health = 100
 
-
-
-
 var is_scoping: bool = false
+
 @onready var left_wheels = [$Leftwheel1, $Leftwheel2, $Leftwheel3, $Leftwheel4, 
 							$Leftwheel5, $Leftwheel6, $Leftwheel7]
 @onready var right_wheels = [$Rightwheel1, $Rightwheel2, $Rightwheel3, $Rightwheel4, 
@@ -37,21 +30,19 @@ var is_scoping: bool = false
 @onready var timer = $CooldownTimer
 
 var target_yaw: float = 0.0
-
 var is_free_looking: bool = false
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	if camera:
 		camera.current = true
 		scope.current = false
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("scope"):
-		# Toggle the boolean variable (true becomes false, false becomes true)
 		is_scoping = !is_scoping
-		
-		# Call the function to update the cameras based on that variable
 		update_cameras()
+
 func update_cameras() -> void:
 	if camera and scope:
 		if is_scoping:
@@ -60,11 +51,6 @@ func update_cameras() -> void:
 		else:
 			camera.current = true
 			scope.current = false
-func _Damage(Damage: float) -> void:
-	health -= Damage 
-
-
-
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Freelook"):
@@ -74,19 +60,20 @@ func _process(delta: float) -> void:
 		is_free_looking = false
 		neck.rotation = Vector3.ZERO
 		
-		
 	var steer = Input.get_axis("right", "left")
 	var move_dir = Input.get_axis("down", "up")
-	if steer != 0 and move_dir !=0:
+	
+	if steer != 0 and move_dir != 0:
 		for wheel in left_wheels:
 			wheel.engine_force = ENGINE_POWER * (move_dir - steer)
 		for wheel in right_wheels:
 			wheel.engine_force = ENGINE_POWER * (move_dir + steer)
+			
 	if steer != 0:
 		for wheel in left_wheels:
-			wheel.engine_force = ENGINE_POWER * -steer *2
+			wheel.engine_force = ENGINE_POWER * -steer * 2
 		for wheel in right_wheels:
-			wheel.engine_force = ENGINE_POWER * steer *2
+			wheel.engine_force = ENGINE_POWER * steer * 2
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.002, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.002, 0, 0)
 	else:
@@ -96,9 +83,7 @@ func _process(delta: float) -> void:
 			wheel.engine_force = ENGINE_POWER * move_dir
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.001, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.001, 0, 0)
-		
-		
-		
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if is_free_looking:
@@ -113,7 +98,7 @@ func _input(event: InputEvent) -> void:
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton or InputEventKey:
-		if Input.is_action_just_pressed("fire")and timer.is_stopped() and TotAmmo > 0:
+		if Input.is_action_just_pressed("fire") and timer.is_stopped() and TotAmmo > 0:
 			fire()
 		
 	if timer.is_stopped() and TotAmmo > 0:
@@ -124,17 +109,26 @@ func fire():
 	get_tree().current_scene.add_child(new_shell)
 	new_shell.initialize(barrel.global_position, barrel.global_basis.x, 800.0)
 	
-	# ---- NEW: Find the UI node on the player and give it to the bullet ----
-	# This searches the player's direct children for your CanvasLayer node
+	# Find the UI CanvasLayer node attached to the player and give it to the bullet
 	var my_ui = find_child("CanvasLayer", true, false) 
 	if my_ui:
 		new_shell.ui_reference = my_ui
-	# -----------------------------------------------------------------------
 	
-	# Prevent the bullet from hitting yourself
+	# Prevent the bullet from hitting yourself immediately out of the barrel
 	if new_shell.has_node("Raycast"):
 		new_shell.get_node("Raycast").add_exception(self)
 		
 	ammo -= 1
 	TotAmmo -= 1
 	timer.start()
+
+# Consolidated damage tracking function
+func take_damage(amount: float) -> void:
+	health -= amount
+	
+	if health <= 0:
+		die()
+		
+func die() -> void:
+	queue_free()
+	get_tree().change_scene_to_packed(Menu)
