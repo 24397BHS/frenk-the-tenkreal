@@ -1,5 +1,5 @@
 extends VehicleBody3D
-const Menu = preload("res://Scenes/main_menu.tscn")
+const Lose = preload("res://Scenes/Lose.tscn")
 const ShellAP = preload("res://Scenes/ShellAp.tscn")
 const ENGINE_POWER = 1500
 var SENS: float = 0.0002
@@ -131,4 +131,4 @@ func take_damage(amount: float) -> void:
 		
 func die() -> void:
 	queue_free()
-	get_tree().change_scene_to_packed(Menu)
+	get_tree().change_scene_to_packed(Lose)

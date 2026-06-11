@@ -15,6 +15,10 @@ run/main_scene="uid://drwtwqlmpih8w"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [global_group]
 
 Player=""

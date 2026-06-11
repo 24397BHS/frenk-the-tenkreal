@@ -51,3 +51,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.346855, 2.4999962, 39.2554
 
 [node name="Tank" parent="." unique_id=1924498077 instance=ExtResource("1_ci6au")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6582031, 2.8479648, -76.98008)
+Maxhealth = 100
+health = 100
+
+[node name="Badguy3" parent="." unique_id=1027494050 instance=ExtResource("2_26yhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7023525, 2.5000038, 30.22805)
+
+[node name="Badguy4" parent="." unique_id=832671687 instance=ExtResource("2_26yhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.58626, 2.5000038, 27.351854)
