@@ -1,5 +1,5 @@
 extends Area3D
-@export var speed: float = 100.0
+@export var speed: float = 250.0
 @export var bullet_gravity: float = 9.8 
 
 # Make sure this matches the name of your RayCast3D node in the inspector exactly

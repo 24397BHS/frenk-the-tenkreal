@@ -8,14 +8,14 @@ extends StaticBody3D
 var player_in_range = false
 var player_target = null
 
-@export var rotation_speed: float = 5.0 
+@export var rotation_speed: float = 2.0 
 
 # Match this value to your bullet script's speed and gravity!
-@export var bullet_speed: float = 100.0
+@export var bullet_speed: float = 250.0
 @export var bullet_gravity: float = 9.8
 
 # ---- CHANCE TO HIT CONFIGURATION ----
-@export_range(0.0, 1.0) var hit_chance: float = 0.75
+@export_range(0.0, 1.0) var hit_chance: float = 0.2
 var current_aim_offset: Vector3 = Vector3.ZERO
 var offset_wobble_timer: float = 0.0
 
@@ -86,7 +86,7 @@ func _shoot():
 			# Perfect aim for this shot cycle
 			current_aim_offset = Vector3.ZERO
 			
-		shoot_timer.start(1.5)
+		shoot_timer.start(3.0)
 
 func _on_player_entered(body):
 	if body.is_in_group("Player"):

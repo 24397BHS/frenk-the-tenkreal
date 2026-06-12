@@ -130,5 +130,5 @@ func take_damage(amount: float) -> void:
 		die()
 		
 func die() -> void:
-	queue_free()
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	get_tree().change_scene_to_packed(Lose)
