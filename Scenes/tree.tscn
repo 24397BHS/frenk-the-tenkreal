@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://228hxxy4p8xf" path="res://Trees/TREE.fbx" id="1_brfkd"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_0vwjc"]
-radius = 0.34521484
+radius = 0.2529297
 
 [node name="Tree" type="StaticBody3D" unique_id=591970950]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
