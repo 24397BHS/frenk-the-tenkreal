@@ -1,5 +1,4 @@
 extends VehicleBody3D
-const Lose = preload("res://Scenes/Lose.tscn")
 const ShellAP = preload("res://Scenes/ShellAp.tscn")
 const ENGINE_POWER = 1500
 var SENS: float = 0.0002
@@ -98,7 +97,7 @@ func _input(event: InputEvent) -> void:
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton or InputEventKey:
-		if Input.is_action_just_pressed("fire") and timer.is_stopped() and TotAmmo > 0:
+		if Input.is_action_just_pressed("fire") and timer.is_stopped() and TotAmmo > 0 and ammo:
 			fire()
 		
 	if timer.is_stopped() and TotAmmo > 0:
@@ -131,4 +130,4 @@ func take_damage(amount: float) -> void:
 		
 func die() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	get_tree().change_scene_to_packed(Lose)
+	get_tree().change_scene_to_file("res://Scenes/Lose.tscn")

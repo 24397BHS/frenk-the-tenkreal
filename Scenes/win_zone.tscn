@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://orhjqdbx3mkg"]
+
+[ext_resource type="Script" uid="uid://cp3124tvv231s" path="res://Scripts/win_zone.gd" id="1_qvyui"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_udboo"]
+
+[node name="WinZone" type="Area3D" unique_id=1870270549]
+script = ExtResource("1_qvyui")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1876732921]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+shape = SubResource("SphereShape3D_udboo")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2084078376]
+use_collision = true
+size = Vector3(1, 0.5, 1)
