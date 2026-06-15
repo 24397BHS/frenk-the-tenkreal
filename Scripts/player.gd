@@ -1,6 +1,6 @@
 extends VehicleBody3D
 const ShellAP = preload("res://Scenes/ShellAp.tscn")
-const ENGINE_POWER = 1500
+const ENGINE_POWER = 1750
 var SENS: float = 0.0002
 var ELEV: float = 0.0001
 var look: float = 0.0003

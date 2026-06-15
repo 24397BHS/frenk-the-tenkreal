@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ckuljditaxvh0"]
+
+[ext_resource type="PackedScene" uid="uid://dtav0ptpxf48" path="res://Trees/bush.fbx" id="1_8cy4n"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tld8b"]
+albedo_color = Color(0.073679514, 0.18556231, 0.049738944, 1)
+
+[node name="bush" unique_id=210338230 instance=ExtResource("1_8cy4n")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="Sphere" parent="." index="0" unique_id=963294446]
+surface_material_override/0 = SubResource("StandardMaterial3D_tld8b")
