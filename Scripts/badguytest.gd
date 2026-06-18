@@ -15,7 +15,7 @@ var player_target = null
 @export var bullet_gravity: float = 9.8
 
 # ---- CHANCE TO HIT CONFIGURATION ----
-@export_range(0.0, 1.0) var hit_chance: float = 0.2
+@export_range(0.0, 1.0) var hit_chance: float = 0.1
 var current_aim_offset: Vector3 = Vector3.ZERO
 var offset_wobble_timer: float = 0.0
 
