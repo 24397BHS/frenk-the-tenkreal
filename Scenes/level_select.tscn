@@ -1,9 +1,57 @@
 [gd_scene format=3 uid="uid://cxh08bbyxl0dw"]
 
-[ext_resource type="Script" uid="uid://ihvpng53ja2q" path="res://Scenes/level_select.gd" id="1_nkys2"]
-[ext_resource type="PackedScene" uid="uid://crlfxeixc6iu0" path="res://Scenes/fade_transition.tscn" id="2_lx4vd"]
+[ext_resource type="Script" uid="uid://c4gad0emkdibw" path="res://Scenes/level_select.gd" id="1_ycuq1"]
+[ext_resource type="PackedScene" uid="uid://crlfxeixc6iu0" path="res://Scenes/fade_transition.tscn" id="2_wvlnn"]
 
-[node name="Level Select" type="Node2D" unique_id=1656581814]
-script = ExtResource("1_nkys2")
+[node name="Control" type="Control" unique_id=1465284390]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ycuq1")
 
-[node name="fade_transition" parent="." unique_id=748157666 instance=ExtResource("2_lx4vd")]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1118346275]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tutorial" type="Button" parent="." unique_id=551135314]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 80.0
+offset_right = 189.0
+offset_bottom = 111.0
+text = "Tutorial"
+
+[node name="Level 1" type="Button" parent="." unique_id=1016622214]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 80.0
+offset_right = 309.0
+offset_bottom = 111.0
+text = "1"
+
+[node name="Level 2" type="Button" parent="." unique_id=618855025]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 80.0
+offset_right = 429.0
+offset_bottom = 111.0
+text = "2"
+
+[node name="Level 3" type="Button" parent="." unique_id=1901510720]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 80.0
+offset_right = 549.0
+offset_bottom = 111.0
+text = "3"
+
+[node name="Fade_transition" parent="." unique_id=748157666 instance=ExtResource("2_wvlnn")]
+layout_mode = 0
+anchors_preset = 0

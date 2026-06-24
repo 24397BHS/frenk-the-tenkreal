@@ -1,6 +1,4 @@
-extends Node2D
+extends Control
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$fade_transition/AnimationPlayer.play("fade_out")
+	$Fade_transition/AnimationPlayer.play("Fade_out")
