@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://2ybo27ree5r5" path="res://Shermanfiles/t1.jpg" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://bykno47ar1sgg" path="res://Shermanfiles/4abd7b54 copy.jpg" id="1_xhfnw"]
 [ext_resource type="Script" uid="uid://dluwsqpgojlkd" path="res://Scripts/canvas_layer.gd" id="4_e80uo"]
-[ext_resource type="Texture2D" uid="uid://dg521sbe40esv" path="res://Shermanfiles/Shermansight.png" id="5_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://hsc6kpi2ltrt" path="res://Grass/TankSight.png" id="5_5ixxa"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kpjcp"]
 size = Vector3(5, 3, 11.465271)
@@ -938,7 +938,7 @@ transform = Transform3D(0.9999998, -1.110223e-16, 0, 2.220446e-16, 0.9999998, 6.
 
 [node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))" unique_id=1092109173]
 transform = Transform3D(-1.7209203e-08, -1.7209194e-08, -0.3937008, 1.7209207e-08, 0.3937007, -1.720919e-08, 0.39370084, -1.7209203e-08, -1.7209203e-08, -0.034253776, -0.13608229, 0.25285435)
-fov = 25.0
+fov = 20.0
 
 [node name="neck" type="Node3D" parent="Body/Сombat_Tower" unique_id=938750213]
 transform = Transform3D(1, 0, 0, 0, 1, -1.4210849e-14, 0, 5.082197e-21, 1, -0.19519053, 0.45550716, 0.35707977)
@@ -1116,6 +1116,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control" unique_id=220142123]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_5ixxa")
+expand_mode = 1
+
 [node name="Label" type="Label" parent="CanvasLayer/Control" unique_id=1216780779]
 layout_mode = 1
 anchors_preset = 3
@@ -1160,23 +1171,6 @@ theme_override_colors/font_color = Color(0.68807614, 0.3706006, 0.14229205, 1)
 theme_override_font_sizes/font_size = 35
 text = "Hit"
 horizontal_alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control" unique_id=220142123]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -323.0
-offset_top = -323.0
-offset_right = 323.0
-offset_bottom = 323.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_5ixxa")
-expand_mode = 1
 
 [node name="CooldownTimer" type="Timer" parent="." unique_id=1910581679]
 wait_time = 3.0

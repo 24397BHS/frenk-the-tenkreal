@@ -18,7 +18,11 @@ sky_material = SubResource("ProceduralSkyMaterial_c7s6e")
 background_mode = 2
 sky = SubResource("Sky_wijl4")
 tonemap_mode = 2
+glow_enabled = true
 fog_enabled = true
+fog_density = 0.005
+fog_sky_affect = 0.3
+fog_height_density = 0.1
 volumetric_fog_density = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c7s6e"]
