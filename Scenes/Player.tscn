@@ -1162,6 +1162,7 @@ text = "Hit"
 horizontal_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control" unique_id=220142123]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

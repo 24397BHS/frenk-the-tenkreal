@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://dlydrk31s6qtd" path="res://Grass/Frenkthetenk.png" id="1_c4tk2"]
 [ext_resource type="Script" uid="uid://d114i3jrb6u5x" path="res://Scripts/main_menu.gd" id="1_rmbjf"]
-[ext_resource type="PackedScene" uid="uid://crlfxeixc6iu0" path="res://Scenes/fade_transition.tscn" id="3_b7rmo"]
 
 [node name="Control" type="Control" unique_id=1298422419]
 layout_mode = 3
@@ -44,17 +43,6 @@ text = "Settings"
 [node name="Quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=337195847]
 layout_mode = 2
 text = "Quit"
-
-[node name="Fade_transition" parent="." unique_id=748157666 instance=ExtResource("3_b7rmo")]
-visible = false
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
-
-[node name="Fade_timer" type="Timer" parent="Fade_transition" unique_id=1628279798]
 
 [node name="SettingsPannelContainer" type="CenterContainer" parent="." unique_id=1422173100]
 visible = false
@@ -149,6 +137,6 @@ grow_vertical = 2
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Settings" to="SettingsPannelContainer" method="show"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Settings" to="SettingsPannelContainer" method="set_mouse_filter" binds= [0]]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
-[connection signal="timeout" from="Fade_transition/Fade_timer" to="." method="_on_fade_timer_timeout"]
 [connection signal="pressed" from="SettingsPannelContainer/PanelContainer/Control/Button" to="SettingsPannelContainer" method="hide"]

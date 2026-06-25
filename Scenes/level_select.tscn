@@ -1,7 +1,6 @@
-[gd_scene format=3 uid="uid://cxh08bbyxl0dw"]
+[gd_scene format=3 uid="uid://bb63w2j8osywj"]
 
-[ext_resource type="Script" uid="uid://c4gad0emkdibw" path="res://Scenes/level_select.gd" id="1_ycuq1"]
-[ext_resource type="PackedScene" uid="uid://crlfxeixc6iu0" path="res://Scenes/fade_transition.tscn" id="2_wvlnn"]
+[ext_resource type="Script" uid="uid://c4gad0emkdibw" path="res://Scripts/level_select.gd" id="1_ycuq1"]
 
 [node name="Control" type="Control" unique_id=1465284390]
 layout_mode = 3
@@ -52,6 +51,19 @@ offset_right = 549.0
 offset_bottom = 111.0
 text = "3"
 
-[node name="Fade_transition" parent="." unique_id=748157666 instance=ExtResource("2_wvlnn")]
-layout_mode = 0
-anchors_preset = 0
+[node name="Back" type="Button" parent="." unique_id=433155098]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Back
+"
+
+[connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="Level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Level 3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

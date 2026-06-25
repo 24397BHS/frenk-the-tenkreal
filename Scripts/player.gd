@@ -27,6 +27,7 @@ var is_scoping: bool = false
 @onready var manlet = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))"
 @onready var barrel: Node3D = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))/Bulletspawn"
 @onready var timer = $CooldownTimer
+@onready var sight = $CanvasLayer/Control/TextureRect
 
 var target_yaw: float = 0.0
 var is_free_looking: bool = false
@@ -47,9 +48,12 @@ func update_cameras() -> void:
 		if is_scoping:
 			scope.current = true
 			camera.current = false
+			sight.show()
+			
 		else:
 			camera.current = true
 			scope.current = false
+			sight.hide()
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Freelook"):
