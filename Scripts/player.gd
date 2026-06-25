@@ -70,9 +70,9 @@ func _process(delta: float) -> void:
 			
 	if steer != 0:
 		for wheel in left_wheels:
-			wheel.engine_force = ENGINE_POWER * -steer * 2
+			wheel.engine_force = ENGINE_POWER * -steer * 1.2
 		for wheel in right_wheels:
-			wheel.engine_force = ENGINE_POWER * steer * 2
+			wheel.engine_force = ENGINE_POWER * steer * 1.2
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.002, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.002, 0, 0)
 	else:

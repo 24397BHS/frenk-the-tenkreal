@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cp07ssrq0kse"]
+
+[ext_resource type="Script" uid="uid://c0khqscc075yc" path="res://Scripts/win.gd" id="1_3mm25"]
+[ext_resource type="Texture2D" uid="uid://lsohr1gngx0" path="res://Grass/Frenkthetenkwin.PNG" id="2_611cj"]
+
+[node name="Control" type="Control" unique_id=1838576127]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3mm25")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=713864826]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_611cj")
+
+[node name="CenterContainer" type="CenterContainer" parent="TextureRect" unique_id=135901510]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/CenterContainer" unique_id=121222880]
+layout_mode = 2
+
+[node name="Next" type="Button" parent="TextureRect/CenterContainer/VBoxContainer" unique_id=2068537126]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Next"
+
+[node name="MainMenu" type="Button" parent="TextureRect/CenterContainer/VBoxContainer" unique_id=1149409437]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Main Menu"
+
+[connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
