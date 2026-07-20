@@ -1035,7 +1035,7 @@ wheel_radius = 0.6
 suspension_stiffness = 50.0
 
 [node name="Wheel10" type="MeshInstance3D" parent="Rightwheel1" unique_id=1661309831]
-transform = Transform3D(-1.1102693e-07, -1.8808694e-28, -2.54, -4.3029277e-21, 2.54, 0, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
+transform = Transform3D(-1.1102693e-07, -1.8808693e-28, -2.54, -4.3029277e-21, 2.54, 1.20370614e-35, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_efikj")
 mesh = SubResource("ArrayMesh_e0rdj")
 
@@ -1046,7 +1046,7 @@ wheel_radius = 0.6
 suspension_stiffness = 50.0
 
 [node name="Wheel11" type="MeshInstance3D" parent="Rightwheel2" unique_id=613211336]
-transform = Transform3D(-1.1102693e-07, -1.8808694e-28, -2.54, -4.3029277e-21, 2.54, 0, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
+transform = Transform3D(-1.1102693e-07, -1.8808693e-28, -2.54, -4.3029277e-21, 2.54, 1.20370614e-35, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_itxgx")
 mesh = SubResource("ArrayMesh_fda8q")
 
@@ -1057,7 +1057,7 @@ wheel_radius = 0.6
 suspension_stiffness = 50.0
 
 [node name="Wheel12" type="MeshInstance3D" parent="Rightwheel3" unique_id=319894766]
-transform = Transform3D(-1.1102693e-07, -1.8808694e-28, -2.54, -4.3029277e-21, 2.54, 0, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
+transform = Transform3D(-1.1102693e-07, -1.8808693e-28, -2.54, -4.3029277e-21, 2.54, 1.20370614e-35, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_cgsek")
 mesh = SubResource("ArrayMesh_qyy6p")
 
@@ -1068,7 +1068,7 @@ wheel_radius = 0.6
 suspension_stiffness = 50.0
 
 [node name="Wheel13" type="MeshInstance3D" parent="Rightwheel4" unique_id=1433650998]
-transform = Transform3D(-1.1102693e-07, -1.8808694e-28, -2.54, -4.3029277e-21, 2.54, 0, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
+transform = Transform3D(-1.1102693e-07, -1.8808693e-28, -2.54, -4.3029277e-21, 2.54, 1.20370614e-35, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_0pi4m")
 mesh = SubResource("ArrayMesh_37yql")
 
@@ -1079,7 +1079,7 @@ wheel_radius = 0.6
 suspension_stiffness = 50.0
 
 [node name="Wheel14" type="MeshInstance3D" parent="Rightwheel5" unique_id=1200550148]
-transform = Transform3D(-1.1102693e-07, -1.8808694e-28, -2.54, -4.3029277e-21, 2.54, 0, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
+transform = Transform3D(-1.1102693e-07, -1.8808693e-28, -2.54, -4.3029277e-21, 2.54, 1.20370614e-35, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_sg6sq")
 mesh = SubResource("ArrayMesh_vwny5")
 
@@ -1090,7 +1090,7 @@ wheel_radius = 0.6
 suspension_stiffness = 50.0
 
 [node name="Wheel15" type="MeshInstance3D" parent="Rightwheel6" unique_id=897908071]
-transform = Transform3D(-1.1102693e-07, -1.8808694e-28, -2.54, -4.3029277e-21, 2.54, 0, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
+transform = Transform3D(-1.1102693e-07, -1.8808693e-28, -2.54, -4.3029277e-21, 2.54, 1.20370614e-35, 2.54, 4.3029277e-21, -1.1102693e-07, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_h84ma")
 mesh = SubResource("ArrayMesh_u6425")
 

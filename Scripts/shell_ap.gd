@@ -3,7 +3,7 @@ class_name AP
 
 var bullet_velocity: Vector3 = Vector3.ZERO
 var speed: float = 800.0
-var lifetime: float = 3.0
+var lifetime: float = 6.0
 var age: float = 0.0
 var shot_direction: Vector3 = Vector3.ZERO
 var gravity: Vector3

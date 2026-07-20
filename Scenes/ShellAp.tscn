@@ -9,7 +9,7 @@ emission = Color(0.3821566, 0.35032505, 0.07511289, 1)
 emission_energy_multiplier = 5.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_4p7y1"]
-size = Vector3(0.6, 0.6, 0.6)
+size = Vector3(0.1, 0.1, 0.1)
 
 [node name="ShellAP" type="Node3D" unique_id=393268732]
 script = ExtResource("1_4p7y1")
