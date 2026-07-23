@@ -70,7 +70,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.9577065, 0.010244608, 260.2
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.75238, 0.010244608, 235.1607)
 
 [node name="WinZone" parent="." unique_id=1870270549 instance=ExtResource("3_lrk8m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.46403, 0.25001526, -235.01144)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.46403, 0.25001526, 98.34109)
 
 [node name="Forest A10" parent="." unique_id=1945143668 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.634117, 0.010252237, 51.157005)
@@ -100,13 +100,13 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.148087, 0.010244608, 113.2
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -69.29406, 0.010244608, 23.31894)
 
 [node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("4_lrk8m")]
-transform = Transform3D(-0.9999978, 0, -0.0021118228, 0, 1, 0, 0.0021118228, 0, -0.9999978, -9.339336, 1.0891204, 11.49733)
+transform = Transform3D(-0.9999978, 0, -0.0021118228, 0, 1, 0, 0.0021118228, 0, -0.9999978, -9.156432, 1.0891204, 98.10659)
 
 [node name="Forest A19" parent="." unique_id=1222897018 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 30.758293, 0.010229349, 206.85455)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=684930523]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.048723, 2.2106814, 207.97302)
+transform = Transform3D(-2, 0, 0, 0, -2, 0, 0, 0, -2, -22.924347, 2.2106814, 207.97302)
 use_collision = true
 size = Vector3(3, 2.392, 0.1)
 material = SubResource("StandardMaterial3D_cw2pp")
@@ -115,7 +115,7 @@ material = SubResource("StandardMaterial3D_cw2pp")
 transform = Transform3D(-0.3, 0, -4.5298744e-08, 0, 0.3, 0, 4.5298744e-08, 0, -0.3, -14.50401, 0.80475485, 223.52312)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=65875586]
-transform = Transform3D(-2, 0, 0, 0, -2, 0, 0, 0, -2, -1.9439545, 2.185359, 208.1087)
+transform = Transform3D(-2, 0, 0, 0, -2, 0, 0, 0, -2, -1.9440341, 2.185359, 208.1087)
 material_override = SubResource("StandardMaterial3D_8eprm")
 use_collision = true
 size = Vector3(3, 2.3920898, 0.1)
