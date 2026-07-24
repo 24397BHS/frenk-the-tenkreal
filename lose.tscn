@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cmhqvlqakkss3"]
+
+[ext_resource type="Script" uid="uid://uor8f80qup7r" path="res://lose.gd" id="1_rtc1j"]
+
+[node name="Control" type="Control" unique_id=1821493125]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rtc1j")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=190030336]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="TextureRect" unique_id=359731232]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/CenterContainer" unique_id=286614800]
+layout_mode = 2
+
+[node name="Try Again" type="Button" parent="TextureRect/CenterContainer/VBoxContainer" unique_id=2107028493]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Try Again"
+
+[node name="MainMenu" type="Button" parent="TextureRect/CenterContainer/VBoxContainer" unique_id=52284192]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Main Menu"
+
+[connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/Try Again" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
