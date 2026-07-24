@@ -134,4 +134,4 @@ func take_damage(amount: float) -> void:
 		
 func die() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	get_tree().change_scene_to_file("res://Scenes/Lose.tscn")
+	get_tree().change_scene_to_file("res://Scenes/lose.tscn")
