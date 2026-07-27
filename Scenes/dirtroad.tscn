@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d377nrxpv1h6d"]
+
+[ext_resource type="PackedScene" uid="uid://bre84ihu7x4sx" path="res://Environment/Dirtroadstraight.fbx" id="1_2ttet"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ttet"]
+albedo_color = Color(0.29371825, 0.19750893, 0.07846274, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ctry0"]
+points = PackedVector3Array(-0.01, -0.029090904, -0.009805194, 0.0038085915, 0.030470222, 0.019047618, 0.01, 0.029090907, 0.014738034, 0.0038085915, -0.030476186, 0.019047618, 0.01, -0.029090904, -0.009805194, -0.01, 0.029085211, -0.009805194, -0.01, -0.029090904, 0.014738034, 0.01, 0.029090907, -0.009805194, -0.01, 0.029085211, 0.014738034, 0.01, -0.029090904, 0.014738034, -0.0038085915, 0.030470222, 0.019047618, -0.0038085915, -0.030476186, 0.019047618, 0.009215326, 0.029493086, -0.01, 0.009317476, 0.02982001, 0.015)
+
+[node name="Dirtroadstraight" unique_id=132684267 instance=ExtResource("1_2ttet")]
+transform = Transform3D(1.2, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Cube" parent="." index="0" unique_id=180701377]
+surface_material_override/0 = SubResource("StandardMaterial3D_2ttet")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0" unique_id=1132755420]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0" unique_id=1537183052]
+shape = SubResource("ConvexPolygonShape3D_ctry0")

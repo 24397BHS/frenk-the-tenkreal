@@ -38,8 +38,9 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1567079832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 193.8811)
 use_collision = true
-size = Vector3(250, 0, 750)
+size = Vector3(250, 0, 362.2378)
 material = SubResource("StandardMaterial3D_0wcy1")
 
 [node name="Forest A" parent="." unique_id=1981360350 instance=ExtResource("2_caarn")]
@@ -70,16 +71,16 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.9577065, 0.010244608, 260.2
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.75238, 0.010244608, 235.1607)
 
 [node name="WinZone" parent="." unique_id=1870270549 instance=ExtResource("3_lrk8m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.46403, 0.25001526, 98.34109)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.46403, 0.25001526, 76.1874)
 
 [node name="Forest A10" parent="." unique_id=1945143668 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.634117, 0.010252237, 51.157005)
 
 [node name="Forest A11" parent="." unique_id=1343856449 instance=ExtResource("2_caarn")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -69.5845, 0.010244608, -9.676285)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -31.50634, 0.010244608, 46.210022)
 
 [node name="Forest A12" parent="." unique_id=992605456 instance=ExtResource("2_caarn")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 25.089783, 0.010244608, 21.387268)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -3.1987324, 0.010244608, 48.491314)
 
 [node name="Forest A13" parent="." unique_id=1285175359 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -70.680115, 0.010244608, 147.10649)
@@ -91,16 +92,13 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.440102, 0.010244608, 145.3
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -68.1221, 0.010244608, 115.71948)
 
 [node name="Forest A16" parent="." unique_id=1623330112 instance=ExtResource("2_caarn")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -68.041016, 0.010229349, 54.082397)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -62.531796, 0.010229349, 54.082397)
 
 [node name="Forest A17" parent="." unique_id=293817792 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.148087, 0.010244608, 113.27701)
 
-[node name="Forest A18" parent="." unique_id=225851105 instance=ExtResource("2_caarn")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -69.29406, 0.010244608, 23.31894)
-
 [node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("4_lrk8m")]
-transform = Transform3D(-0.9999978, 0, -0.0021118228, 0, 1, 0, 0.0021118228, 0, -0.9999978, -9.156432, 1.0891204, 98.10659)
+transform = Transform3D(-0.9999978, 0, -0.0021118228, 0, 1, 0, 0.0021118228, 0, -0.9999978, -9.201645, 1.0891204, 76.69724)
 
 [node name="Forest A19" parent="." unique_id=1222897018 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 30.758293, 0.010229349, 206.85455)
