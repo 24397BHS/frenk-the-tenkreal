@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dlsdttn57x06b"]
+
+[ext_resource type="PackedScene" uid="uid://bpqlvyramrko3" path="res://Scenes/rock.tscn" id="1_dav8w"]
+[ext_resource type="PackedScene" uid="uid://ckuljditaxvh0" path="res://Scenes/bush.tscn" id="2_512yr"]
+
+[node name="Rockbusgroup" type="Node3D" unique_id=720135791]
+
+[node name="rock9" parent="." unique_id=210338230 instance=ExtResource("1_dav8w")]
+transform = Transform3D(0.5011507, 0, -0.32992116, 0, 0.6, 0, 0.32992116, 0, 0.5011507, -1.8781741, 0.33584696, 1.6725693)
+
+[node name="rock10" parent="." unique_id=1462327333 instance=ExtResource("1_dav8w")]
+transform = Transform3D(0.7845546, 0, 0.15644197, 0, 0.8, 0, -0.15644197, 0, 0.7845546, 1.6462077, 0.33584696, 2.2092142)
+
+[node name="rock11" parent="." unique_id=991807784 instance=ExtResource("1_dav8w")]
+transform = Transform3D(-0.17369975, 0, -0.5743069, 0, 0.6, 0, 0.5743069, 0, -0.17369975, -3.5995846, 0.33584696, 0.21305123)
+
+[node name="rock12" parent="." unique_id=2145020916 instance=ExtResource("1_dav8w")]
+transform = Transform3D(0.3853275, 0, 0.459916, 0, 0.6, 0, -0.459916, 0, 0.3853275, -0.57206744, 0.33584696, 3.9012737)
+
+[node name="bush12" parent="." unique_id=767029326 instance=ExtResource("2_512yr")]
+transform = Transform3D(0.9854643, 0, 0.16988271, 0, 1, 0, -0.16988271, 0, 0.9854643, -0.010113716, 0.5781687, -0.05866909)
+
+[node name="bush13" parent="." unique_id=65328569 instance=ExtResource("2_512yr")]
+transform = Transform3D(0.69025123, 0, -0.72356975, 0, 1, 0, 0.72356975, 0, 0.69025123, -2.4851248, 0.5781687, -2.6050823)

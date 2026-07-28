@@ -4,6 +4,7 @@ extends StaticBody3D
 @onready var bullet_scene = preload("res://Scenes/badguybullettest.tscn")
 @onready var shoot_timer = $ShootTimer
 @onready var detection_zone = $DetectionZone
+@onready var enemyShootingAudioStream = $AudioStreamPlayer_Badfire
 
 # Assign in the Inspector (or let Godot auto-find via path)
 @export var barrel: Node3D 
@@ -139,6 +140,7 @@ func _shoot():
 			var bullet = bullet_scene.instantiate()
 			bullet.global_transform = muzzle.global_transform
 			get_tree().root.add_child(bullet)
+			enemyShootingAudioStream.play()
 		else:
 			print("Cannot shoot: Check if bullet_scene and muzzle are assigned!")
 		

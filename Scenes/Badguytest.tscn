@@ -1,6 +1,8 @@
 [gd_scene format=4 uid="uid://nph845663xde"]
 
 [ext_resource type="Script" uid="uid://bogjshob6ta4m" path="res://Scripts/badguytest.gd" id="1_sehag"]
+[ext_resource type="AudioStream" uid="uid://b05dwfe23eld6" path="res://Soundfx/freesound_community-military-vehicle-humming-33760.mp3" id="2_tpwph"]
+[ext_resource type="AudioStream" uid="uid://bo624ac5drxdu" path="res://Soundfx/Armored-tank-cannon-fire-single-shot.mp3" id="3_88tcj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vuhld"]
 resource_name = "Material"
@@ -1873,5 +1875,17 @@ autostart = true
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=113472569]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019242764, -0.278, 0.39456794)
 shape = SubResource("BoxShape3D_sehag")
+
+[node name="AudioStreamPlayer_Badfire" type="AudioStreamPlayer3D" parent="." unique_id=1316728108]
+stream = ExtResource("3_88tcj")
+max_db = 0.0
+bus = &"SFX"
+
+[node name="AudioStreamPlayer_idle" type="AudioStreamPlayer3D" parent="." unique_id=1888147371]
+stream = ExtResource("2_tpwph")
+volume_db = -5.0
+max_db = 0.0
+autoplay = true
+bus = &"SFX"
 
 [connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

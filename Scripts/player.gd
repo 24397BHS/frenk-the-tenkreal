@@ -28,6 +28,8 @@ var is_scoping: bool = false
 @onready var barrel: Node3D = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))/Bulletspawn"
 @onready var timer = $CooldownTimer
 @onready var sight = $CanvasLayer/Control/TextureRect
+@onready var playerShootAudioStream = $AudioStreamPlayer_Fire
+@onready var playerIdleAudioStream = $AudioStreamPlayer_idle
 
 var target_yaw: float = 0.0
 var is_free_looking: bool = false
@@ -111,7 +113,7 @@ func fire():
 	var new_shell: AP = ShellAP.instantiate()
 	get_tree().current_scene.add_child(new_shell)
 	new_shell.initialize(barrel.global_position, barrel.global_basis.x, 800.0)
-	
+	playerShootAudioStream.play()
 	# Find the UI CanvasLayer node attached to the player and give it to the bullet
 	var my_ui = find_child("CanvasLayer", true, false) 
 	if my_ui:
