@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://orhjqdbx3mkg" path="res://Scenes/win_zone.tscn" id="2_26yhd"]
 [ext_resource type="PackedScene" uid="uid://d377nrxpv1h6d" path="res://Scenes/dirtroad.tscn" id="3_p3ir5"]
 [ext_resource type="PackedScene" uid="uid://cgvrbq71cwoig" path="res://Scenes/Player.tscn" id="4_myvm1"]
+[ext_resource type="PackedScene" uid="uid://nph845663xde" path="res://Scenes/Badguytest.tscn" id="5_q0mm3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_myvm1"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -546,3 +547,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
 
 [node name="Dirtroadstraight2" parent="Dirtroadstraight3/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=917684788 instance=ExtResource("3_p3ir5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("5_q0mm3")]
+transform = Transform3D(0.8193622, 0, 0.57327616, 0, 1, 0, -0.57327616, 0, 0.8193622, 33.77218, 1.0128908, 36.41239)
+
+[node name="Badguy2" parent="." unique_id=700235416 instance=ExtResource("5_q0mm3")]
+transform = Transform3D(0.7429813, 0, 0.6693122, 0, 1, 0, -0.6693122, 0, 0.7429813, 13.998215, 1.0128908, 91.25627)
+
+[node name="Badguy3" parent="." unique_id=79360786 instance=ExtResource("5_q0mm3")]
+transform = Transform3D(-0.48271686, 0, -0.87577647, 0, 1, 0, 0.87577647, 0, -0.48271686, -50.312637, 1.0128908, 73.075005)
+
+[node name="Badguy4" parent="." unique_id=1464587367 instance=ExtResource("5_q0mm3")]
+transform = Transform3D(0.61089164, 0, -0.79171425, 0, 1, 0, 0.79171425, 0, 0.61089164, 3.933154, 1.0128908, -42.745903)
+
+[node name="Badguy5" parent="." unique_id=898793899 instance=ExtResource("5_q0mm3")]
+transform = Transform3D(0.4398922, 0, -0.8980506, 0, 1, 0, 0.8980506, 0, 0.4398922, -6.925743, 1.0128908, 10.243866)

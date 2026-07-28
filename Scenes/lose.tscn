@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cmhqvlqakkss3"]
 
-[ext_resource type="Script" uid="uid://uor8f80qup7r" path="res://lose.gd" id="1_rtc1j"]
+[ext_resource type="Script" uid="uid://uor8f80qup7r" path="res://Scripts/lose.gd" id="1_g0cl2"]
+[ext_resource type="Texture2D" uid="uid://d1ga7wpyilweb" path="res://Grass/Frenkthetenklose.PNG" id="2_04a82"]
 
 [node name="Control" type="Control" unique_id=1821493125]
 layout_mode = 3
@@ -9,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_rtc1j")
+script = ExtResource("1_g0cl2")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=190030336]
 layout_mode = 1
@@ -18,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_04a82")
 
 [node name="CenterContainer" type="CenterContainer" parent="TextureRect" unique_id=359731232]
 layout_mode = 1

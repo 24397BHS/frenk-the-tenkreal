@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://orhjqdbx3mkg" path="res://Scenes/win_zone.tscn" id="3_lrk8m"]
 [ext_resource type="PackedScene" uid="uid://nph845663xde" path="res://Scenes/Badguytest.tscn" id="4_lrk8m"]
 [ext_resource type="Texture2D" uid="uid://d4j8bddr0ev02" path="res://Grass/Controls.png" id="4_oues3"]
+[ext_resource type="PackedScene" uid="uid://bpqlvyramrko3" path="res://Scenes/rock.tscn" id="7_c4dmd"]
+[ext_resource type="PackedScene" uid="uid://ckuljditaxvh0" path="res://Scenes/bush.tscn" id="8_vw2go"]
+[ext_resource type="PackedScene" uid="uid://d377nrxpv1h6d" path="res://Scenes/dirtroad.tscn" id="9_coa25"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_caarn"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -117,3 +120,75 @@ transform = Transform3D(-2, 0, 0, 0, -2, 0, 0, 0, -2, -1.9440341, 2.185359, 208.
 material_override = SubResource("StandardMaterial3D_8eprm")
 use_collision = true
 size = Vector3(3, 2.3920898, 0.1)
+
+[node name="rock" parent="." unique_id=210338230 instance=ExtResource("7_c4dmd")]
+transform = Transform3D(0.5777437, 0, -0.81621826, 0, 1, 0, 0.81621826, 0, 0.5777437, -20.630438, 0.5781682, 199.32257)
+
+[node name="bush" parent="." unique_id=819513925 instance=ExtResource("8_vw2go")]
+transform = Transform3D(0.08619666, 0, 0.4925141, 0, 0.5, 0, -0.4925141, 0, 0.08619666, -9.086703, 0.32858562, 78.904884)
+
+[node name="Dirtroadstraight" parent="." unique_id=132684267 instance=ExtResource("9_coa25")]
+transform = Transform3D(1.2, 0, 0, 0, 0.5, 0, 0, 0, 1, -13.943976, 0, 215.51181)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight" unique_id=1296899552 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2" unique_id=354090 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2" unique_id=807784831 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=12674447 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=313851823 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=174958418 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=97881664 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1287492581 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1474936163 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1892065006 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=910940373 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1278150684 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=875569391 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1658853587 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1731223414 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=151046616 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1166091046 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=440810617 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1357912755 instance=ExtResource("9_coa25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Badguy2" parent="." unique_id=38335214 instance=ExtResource("4_lrk8m")]
+transform = Transform3D(-0.9999978, 0, -0.0021118228, 0, 1, 0, 0.0021118228, 0, -0.9999978, -31.076134, 1.0891204, 71.423775)
+
+[node name="rock2" parent="." unique_id=2020439778 instance=ExtResource("7_c4dmd")]
+transform = Transform3D(0.07028328, 0, 0.59586936, 0, 0.6, 0, -0.59586936, 0, 0.07028328, -31.225004, 0.22311336, 74.01987)

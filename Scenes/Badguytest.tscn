@@ -1655,13 +1655,16 @@ shadow_mesh = SubResource("ArrayMesh_j5gj3")
 [sub_resource type="SphereShape3D" id="SphereShape3D_88tcj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sehag"]
-size = Vector3(2.3316345, 1.5563965, 4.296814)
+size = Vector3(1.7843351, 1.5563965, 3.269577)
 
-[node name="Badguy" type="StaticBody3D" unique_id=452860622]
+[node name="Badguy" type="StaticBody3D" unique_id=452860622 node_paths=PackedStringArray("barrel", "muzzle")]
 script = ExtResource("1_sehag")
+barrel = NodePath("Hull/Manlet")
+muzzle = NodePath("Hull/Manlet/Recoil Segment Barrel/Barrel/Muzzle")
+hit_chance = 0.1
 
 [node name="Hull" type="MeshInstance3D" parent="." unique_id=178493818]
-transform = Transform3D(-88.22094, 3.4852237e-05, -2.5437174e-12, 0, 5.334562e-06, 89.4991, 3.4354503e-05, 89.4991, -1.0669124e-05, -0.017074227, -0.18135133, 0.23827635)
+transform = Transform3D(-88.22094, 3.4852234e-05, 1.5234396e-12, 0, -3.91213e-06, 89.4991, 3.43545e-05, 89.4991, 3.91213e-06, -0.017074227, -0.18135133, 0.23827635)
 mesh = SubResource("ArrayMesh_sehag")
 
 [node name="Cupola" type="MeshInstance3D" parent="Hull" unique_id=1855948948]
@@ -1685,16 +1688,19 @@ transform = Transform3D(-0.21441306, -8.230313e-08, 0, 8.349553e-08, -0.21135104
 mesh = SubResource("ArrayMesh_qv2l2")
 
 [node name="Manlet" type="MeshInstance3D" parent="Hull" unique_id=230895609]
-transform = Transform3D(4.943168e-09, -3.229514e-08, -0.11890651, 0, -0.08293259, 4.630391e-08, -0.08293259, -2.220446e-15, -1.4174763e-08, -0.0008506995, -0.004222761, 0.002026292)
+transform = Transform3D(3.6250987e-09, 3.322255e-15, -0.11890651, -1.2522473e-08, -0.08293259, -5.548171e-15, -0.08293259, 1.2522473e-08, -5.1975686e-09, -0.0008506995, -0.004222761, 0.002026292)
 mesh = SubResource("ArrayMesh_dg40f")
 
 [node name="Recoil Segment Barrel" type="MeshInstance3D" parent="Hull/Manlet" unique_id=1347639705]
-transform = Transform3D(0, 1.041435, -3.103718e-08, 2.1960828e-08, 0, 1.041435, -0.7368831, 3.103718e-08, 0, 0.0059673525, 0.06844835, -1.7881393e-09)
+transform = Transform3D(2.1303709e-14, 1.041435, -3.1037175e-08, 2.1960943e-08, -1.0658141e-14, 1.041435, -0.7368831, 3.103718e-08, 2.842171e-14, 0.0059673525, 0.06844835, -1.8626451e-09)
 mesh = SubResource("ArrayMesh_qcnq2")
 
 [node name="Barrel" type="MeshInstance3D" parent="Hull/Manlet/Recoil Segment Barrel" unique_id=1671902998]
 transform = Transform3D(1, -3.5527137e-15, -3.1058817e-22, 3.5527137e-15, 1, -5.517154e-37, 3.1058817e-22, -5.517154e-37, 1, -5.9604643e-10, 8.638807e-11, 9.536743e-09)
 mesh = SubResource("ArrayMesh_5ktri")
+
+[node name="Muzzle" type="Marker3D" parent="Hull/Manlet/Recoil Segment Barrel/Barrel" unique_id=807978811]
+transform = Transform3D(-0.12936717, 2.151877e-09, 7.194762e-10, -1.5645195e-08, -0.12936713, 3.855445e-09, 3.4578727e-09, -1.5421767e-08, -0.12936713, 0.007500076, -0.0057299477, 0.19175032)
 
 [node name="ReturnRoller L1" type="MeshInstance3D" parent="Hull" unique_id=1241812183]
 transform = Transform3D(-0.10315786, 3.4301024e-08, -5.109566e-10, 3.3616566e-08, 0.09765357, -0.020680202, -9.018346e-09, -0.028346846, -0.071242355, 0.008587694, -0.0069428813, -0.0025499302)
@@ -1860,16 +1866,12 @@ mesh = SubResource("ArrayMesh_ay827")
 transform = Transform3D(250, 0, 0, 0, 250, 0, 0, 0, 250, 0, 0, 0)
 shape = SubResource("SphereShape3D_88tcj")
 
-[node name="Muzzle" type="Marker3D" parent="." unique_id=807978811]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.1299257)
-
 [node name="ShootTimer" type="Timer" parent="." unique_id=1339800743]
 wait_time = 3.0
-one_shot = true
 autostart = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=113472569]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.278, 0.16397095)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019242764, -0.278, 0.39456794)
 shape = SubResource("BoxShape3D_sehag")
 
 [connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

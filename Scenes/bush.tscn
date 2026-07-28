@@ -6,7 +6,6 @@
 albedo_color = Color(0.073679514, 0.18556231, 0.049738944, 1)
 
 [node name="bush" unique_id=210338230 instance=ExtResource("1_8cy4n")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
-[node name="Sphere" parent="." index="0" unique_id=963294446]
+[node name="Sphere" parent="." index="0" unique_id=2042237934]
 surface_material_override/0 = SubResource("StandardMaterial3D_tld8b")
