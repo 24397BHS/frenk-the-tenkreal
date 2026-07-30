@@ -93,7 +93,7 @@ func _process(delta: float) -> void:
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.001, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.001, 0, 0)
 	#calculating sound or smt idk
-	var pitch_increase_speed = 8.0
+	var pitch_increase_speed = 20.0
 	var max_pitch = 20.0
 	var engine_sound = linear_velocity.length() / MAX_SPEED * pitch_increase_speed +1
 	engine_sound = min(engine_sound, max_pitch)

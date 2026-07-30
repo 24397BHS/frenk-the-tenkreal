@@ -21,6 +21,7 @@ sky_material = SubResource("ProceduralSkyMaterial_caarn")
 background_mode = 2
 sky = SubResource("Sky_lrk8m")
 tonemap_mode = 2
+fog_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wcy1"]
 albedo_color = Color(0.24313726, 0.16078432, 0.05882353, 1)

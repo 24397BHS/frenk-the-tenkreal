@@ -1663,7 +1663,7 @@ size = Vector3(1.7843351, 1.5563965, 3.269577)
 script = ExtResource("1_sehag")
 barrel = NodePath("Hull/Manlet")
 muzzle = NodePath("Hull/Manlet/Recoil Segment Barrel/Barrel/Muzzle")
-hit_chance = 0.1
+hit_chance = 0.15
 
 [node name="Hull" type="MeshInstance3D" parent="." unique_id=178493818]
 transform = Transform3D(-88.22094, 3.4852234e-05, 1.5234396e-12, 0, -3.91213e-06, 89.4991, 3.43545e-05, 89.4991, 3.91213e-06, -0.017074227, -0.18135133, 0.23827635)

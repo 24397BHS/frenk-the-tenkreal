@@ -4,7 +4,10 @@ extends Control
 
 
 func _on_try_again_pressed() -> void:
-	pass # Replace with function body.
+	if Global.level == 0:
+		get_tree().change_scene_to_file("res://Scenes/Tutorialmap.tscn")
+	elif Global.level == 1:
+		get_tree().change_scene_to_file("res://Scenes/map.tscn")
 
 
 
