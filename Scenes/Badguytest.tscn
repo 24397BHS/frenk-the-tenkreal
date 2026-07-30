@@ -1884,8 +1884,10 @@ bus = &"SFX"
 [node name="AudioStreamPlayer_idle" type="AudioStreamPlayer3D" parent="." unique_id=1888147371]
 stream = ExtResource("2_tpwph")
 volume_db = -5.0
+unit_size = 1.0
 max_db = 0.0
 autoplay = true
+max_distance = 25.0
 bus = &"SFX"
 
 [connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

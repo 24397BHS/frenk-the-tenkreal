@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4tso00yse112"
+path="res://.godot/imported/Sherman deceleration.mp3-3f57893cfa218ce3fb9cacc7faff437d.mp3str"
+
+[deps]
+
+source_file="res://Soundfx/Sherman deceleration.mp3"
+dest_files=["res://.godot/imported/Sherman deceleration.mp3-3f57893cfa218ce3fb9cacc7faff437d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

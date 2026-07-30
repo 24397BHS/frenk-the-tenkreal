@@ -6,7 +6,8 @@
 [ext_resource type="Script" uid="uid://dluwsqpgojlkd" path="res://Scripts/canvas_layer.gd" id="4_e80uo"]
 [ext_resource type="Texture2D" uid="uid://hsc6kpi2ltrt" path="res://Grass/TankSight.png" id="5_5ixxa"]
 [ext_resource type="AudioStream" uid="uid://bo624ac5drxdu" path="res://Soundfx/Armored-tank-cannon-fire-single-shot.mp3" id="6_nn08x"]
-[ext_resource type="AudioStream" uid="uid://b05dwfe23eld6" path="res://Soundfx/freesound_community-military-vehicle-humming-33760.mp3" id="7_52ee3"]
+[ext_resource type="AudioStream" uid="uid://b5hjdglmuhwjh" path="res://Soundfx/smartsound_TRANSPORTATION_TANK_Small_Tracks_Rattle_Medium_01.mp3" id="7_bhhdu"]
+[ext_resource type="AudioStream" uid="uid://cx0balk5wouhg" path="res://Soundfx/Sherman idle.mp3" id="8_bhhdu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kpjcp"]
 size = Vector3(5, 3, 11.465271)
@@ -1182,14 +1183,18 @@ one_shot = true
 
 [node name="AudioStreamPlayer_Fire" type="AudioStreamPlayer3D" parent="." unique_id=823223129]
 stream = ExtResource("6_nn08x")
+volume_db = -15.0
 max_db = 0.0
 bus = &"SFX"
 
 [node name="AudioStreamPlayer_engine" type="AudioStreamPlayer3D" parent="." unique_id=1320238083]
+stream = ExtResource("7_bhhdu")
 max_db = 0.0
 bus = &"SFX"
 
 [node name="AudioStreamPlayer_idle" type="AudioStreamPlayer3D" parent="." unique_id=1540231504]
-stream = ExtResource("7_52ee3")
+stream = ExtResource("8_bhhdu")
+volume_db = -20.0
+unit_size = 0.5
 max_db = 0.0
 bus = &"SFX"

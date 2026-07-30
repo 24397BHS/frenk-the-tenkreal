@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g0as36rantql"
+path="res://.godot/imported/Sherman rev.mp3-6fdb74933b09f87509d5d721979d3bb4.mp3str"
+
+[deps]
+
+source_file="res://Soundfx/Sherman rev.mp3"
+dest_files=["res://.godot/imported/Sherman rev.mp3-6fdb74933b09f87509d5d721979d3bb4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

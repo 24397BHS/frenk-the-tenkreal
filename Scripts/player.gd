@@ -1,6 +1,7 @@
 extends VehicleBody3D
 const ShellAP = preload("res://Scenes/ShellAp.tscn")
 const ENGINE_POWER = 500
+const MAX_SPEED = 100
 var SENS: float = 0.0002
 var ELEV: float = 0.0001
 var look: float = 0.0003
@@ -30,6 +31,7 @@ var is_scoping: bool = false
 @onready var sight = $CanvasLayer/Control/TextureRect
 @onready var playerShootAudioStream = $AudioStreamPlayer_Fire
 @onready var playerIdleAudioStream = $AudioStreamPlayer_idle
+@onready var playerEngineAudioStream = $AudioStreamPlayer_engine
 
 var target_yaw: float = 0.0
 var is_free_looking: bool = false
@@ -39,6 +41,8 @@ func _ready() -> void:
 	if camera:
 		camera.current = true
 		scope.current = false
+		
+	playerIdleAudioStream.play()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("scope"):
@@ -73,7 +77,7 @@ func _process(delta: float) -> void:
 			wheel.engine_force = ENGINE_POWER * (move_dir - steer)
 		for wheel in right_wheels:
 			wheel.engine_force = ENGINE_POWER * (move_dir + steer)
-			
+		
 	if steer != 0:
 		for wheel in left_wheels:
 			wheel.engine_force = ENGINE_POWER * -steer * 1.2
@@ -88,7 +92,13 @@ func _process(delta: float) -> void:
 			wheel.engine_force = ENGINE_POWER * move_dir
 		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.001, 0, 0)
 		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.001, 0, 0)
-
+	#calculating sound or smt idk
+	var pitch_increase_speed = 8.0
+	var max_pitch = 20.0
+	var engine_sound = linear_velocity.length() / MAX_SPEED * pitch_increase_speed +1
+	engine_sound = min(engine_sound, max_pitch)
+	playerIdleAudioStream.pitch_scale = engine_sound
+	
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if is_free_looking:
