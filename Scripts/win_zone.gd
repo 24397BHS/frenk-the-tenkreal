@@ -13,6 +13,6 @@ func _on_body_entered(body: Node3D) -> void:
 		# Free the mouse cursor so the player can interact with the win menu
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		
-		get_tree().change_scene_to_file("res://Scenes/Win.tscn")
+		get_tree().change_scene_to_file("res://Scenes/win.tscn")
 		
 		
