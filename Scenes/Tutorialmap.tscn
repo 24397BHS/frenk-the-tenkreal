@@ -114,7 +114,7 @@ size = Vector3(3, 2.392, 0.1)
 material = SubResource("StandardMaterial3D_cw2pp")
 
 [node name="Tank" parent="." unique_id=1924498077 instance=ExtResource("1_sp0wh")]
-transform = Transform3D(-0.3, 0, -4.5298744e-08, 0, 0.3, 0, 4.5298744e-08, 0, -0.3, -14.50401, 0.80475485, 223.52312)
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, -14.50401, 0.80475485, 223.52312)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=65875586]
 transform = Transform3D(-2, 0, 0, 0, -2, 0, 0, 0, -2, -1.9440341, 2.185359, 208.1087)

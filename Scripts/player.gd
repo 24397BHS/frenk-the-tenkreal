@@ -14,10 +14,10 @@ var ammo = 1
 
 var is_scoping: bool = false
 
-@onready var left_wheels = [$Leftwheel1, $Leftwheel2, $Leftwheel3, $Leftwheel4, 
-							$Leftwheel5, $Leftwheel6, $Leftwheel7]
-@onready var right_wheels = [$Rightwheel1, $Rightwheel2, $Rightwheel3, $Rightwheel4, 
-							$Rightwheel5, $Rightwheel6, $Rightwheel7]
+@onready var left_wheels = [$LeftWheel1, $LeftWheel2, $LeftWheel3, $LeftWheel4, 
+							$LeftWheel5, $LeftWheel6, $LeftWheel7]
+@onready var right_wheels = [$RightWheel1, $RightWheel2, $RightWheel3, $RightWheel4, 
+							$RightWheel5, $RightWheel6, $RightWheel7]
  
 @onready var right_tread = $Body/RightTread
 @onready var left_tread = $Body/LeftTread
@@ -31,7 +31,6 @@ var is_scoping: bool = false
 @onready var sight = $CanvasLayer/Control/TextureRect
 @onready var playerShootAudioStream = $AudioStreamPlayer_Fire
 @onready var playerIdleAudioStream = $AudioStreamPlayer_idle
-@onready var playerEngineAudioStream = $AudioStreamPlayer_engine
 
 var target_yaw: float = 0.0
 var is_free_looking: bool = false
@@ -83,15 +82,15 @@ func _process(delta: float) -> void:
 			wheel.engine_force = ENGINE_POWER * -steer * 1.2
 		for wheel in right_wheels:
 			wheel.engine_force = ENGINE_POWER * steer * 1.2
-		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.002, 0, 0)
-		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.002, 0, 0)
+		left_tread.get_active_material(0).uv1_offset += $LeftWheel3.get_rpm() * Vector3(-0.002, 0, 0)
+		right_tread.get_active_material(0).uv1_offset += $RightWheel3.get_rpm() * Vector3(-0.002, 0, 0)
 	else:
 		for wheel in left_wheels:
 			wheel.engine_force = ENGINE_POWER * move_dir
 		for wheel in right_wheels:
 			wheel.engine_force = ENGINE_POWER * move_dir
-		left_tread.get_active_material(0).uv1_offset += $Leftwheel3.get_rpm() * Vector3(-0.001, 0, 0)
-		right_tread.get_active_material(0).uv1_offset += $Rightwheel3.get_rpm() * Vector3(-0.001, 0, 0)
+		left_tread.get_active_material(0).uv1_offset += $LeftWheel3.get_rpm() * Vector3(-0.001, 0, 0)
+		right_tread.get_active_material(0).uv1_offset += $RightWheel3.get_rpm() * Vector3(-0.001, 0, 0)
 	#calculating sound or smt idk
 	var pitch_increase_speed = 20.0
 	var max_pitch = 20.0
