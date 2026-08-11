@@ -16,7 +16,8 @@ func _on_level_1_pressed() -> void:
 
 
 func _on_level_2_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Map 2.tscn")
+	Global.level = 2
 
 
 func _on_level_3_pressed() -> void:

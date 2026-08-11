@@ -8,6 +8,8 @@ func _on_try_again_pressed() -> void:
 		get_tree().change_scene_to_file("res://Scenes/Tutorialmap.tscn")
 	elif Global.level == 1:
 		get_tree().change_scene_to_file("res://Scenes/map.tscn")
+	elif Global.level ==2:
+		get_tree().change_scene_to_file("res://Scenes/Map 2.tscn")
 
 
 
