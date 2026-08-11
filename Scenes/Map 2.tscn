@@ -87,6 +87,51 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
 [node name="90degturnroad" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=772123320 instance=ExtResource("3_oss5m")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -28.9, 0, 18)
 
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad" unique_id=57340924 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.344109, 0, -4.001)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road" unique_id=720896301 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road" unique_id=36030642 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road" unique_id=927661475 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road" unique_id=1324280103 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road" unique_id=779324042 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1360613662 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=719644840 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=695540464 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=482643257 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1070810193 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=260088968 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1451748961 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1439031984 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=861057618 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
 [node name="straight road" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=1568422744 instance=ExtResource("1_ysdhi")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 4.72)
 
@@ -130,6 +175,816 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
 
 [node name="90degturnroad" parent="roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=893032624 instance=ExtResource("3_oss5m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
+
+[node name="roads" parent="roads" unique_id=217734199 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 29.101397, 0, -4.3606935)
+
+[node name="straight road2" parent="roads/roads" unique_id=1945944822 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2" unique_id=1372838352 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2" unique_id=741659810 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2" unique_id=1977012185 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2" unique_id=1998382752 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=850047274 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat" unique_id=1498989471 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.35)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=481231140 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2" unique_id=2146970735 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2" unique_id=1780753703 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2" unique_id=825358555 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2" unique_id=2101024580 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=468761433 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1338704189 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=648743525 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=443674328 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1178991388 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=453289839 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=671821325 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1064799210 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1890672534 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1578451789 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=397449771 instance=ExtResource("3_oss5m")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -28.9, 0, 18)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad" unique_id=1440663211 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.344109, 0, -4.001)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road" unique_id=1510282280 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road" unique_id=266871020 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road" unique_id=1065739368 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road" unique_id=1369421275 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road" unique_id=1327022029 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1986729768 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1110338884 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=342765218 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=832241284 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1228513770 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=732713691 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1757466262 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=905085682 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1493595866 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=2012941699 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 4.72)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road" unique_id=495956077 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road" unique_id=1162456896 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road" unique_id=998394015 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road" unique_id=1383459162 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road" unique_id=102961340 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1806602508 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=472600402 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1930955819 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1489938520 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1932568136 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1063283245 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1100184778 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1221275312 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1299191411 instance=ExtResource("3_oss5m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
+
+[node name="roads2" parent="roads" unique_id=1984242251 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -131, 0, -97.8)
+
+[node name="straight road2" parent="roads/roads2" unique_id=1849699101 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2" unique_id=1847477698 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2" unique_id=137894702 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2" unique_id=997138317 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2" unique_id=1425172870 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=237179874 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat" unique_id=1281252726 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.35)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=70446912 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2" unique_id=1853233222 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2" unique_id=921728002 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2" unique_id=1951527178 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2" unique_id=88584516 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1500090487 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=452417257 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=2026967350 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=2021720908 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=685434506 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1689845897 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=63161884 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=626878816 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1342132797 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1280400453 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1882764088 instance=ExtResource("3_oss5m")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -28.9, 0, 18)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad" unique_id=1956446776 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.344109, 0, -4.001)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road" unique_id=429234690 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road" unique_id=949688144 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road" unique_id=1457721914 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road" unique_id=2129590784 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road" unique_id=451935610 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=240768703 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=160530490 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=315208665 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=395354243 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1278348607 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=863262743 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=647018852 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=2089119305 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1300825918 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=1956549343 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 4.72)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road" unique_id=1456867542 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road" unique_id=1913537769 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road" unique_id=44184473 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road" unique_id=684316957 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road" unique_id=676255360 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=889648813 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1094783915 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1659488216 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1287804440 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=607387890 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1721644923 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=147595414 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=2099454069 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads2/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1162158780 instance=ExtResource("3_oss5m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
+
+[node name="roads" parent="roads/roads2" unique_id=288774760 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 29.101397, 0, -4.3606935)
+
+[node name="straight road2" parent="roads/roads2/roads" unique_id=1387773710 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2" unique_id=932563214 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2" unique_id=485706396 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2" unique_id=629752418 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2" unique_id=295490137 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1007299643 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat" unique_id=167641299 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.35)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=753328876 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2" unique_id=443121920 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2" unique_id=1447391285 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2" unique_id=873826825 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2" unique_id=1842805482 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=29496960 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=473105185 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1162267606 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1774075714 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1635780464 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=35468752 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1483878173 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1801946905 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=473596266 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=66129324 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=909063324 instance=ExtResource("3_oss5m")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -28.9, 0, 18)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad" unique_id=1633875329 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.344109, 0, -4.001)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road" unique_id=2089390387 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road" unique_id=1118814049 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road" unique_id=539980101 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road" unique_id=1887064201 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road" unique_id=873771649 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=531130496 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=20712546 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=57613493 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=553383849 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1277569195 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1685940063 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=925905842 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1632739673 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=593683785 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=268972201 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 4.72)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road" unique_id=790563566 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road" unique_id=1003285660 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road" unique_id=396382280 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road" unique_id=1332041502 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road" unique_id=1664341121 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1776082726 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1258774131 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1641868463 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1067669012 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1600634183 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1803652043 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1761452920 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1243528814 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads2/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1929961953 instance=ExtResource("3_oss5m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
+
+[node name="roads3" parent="roads" unique_id=935544209 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -258, 0, 37.32)
+
+[node name="straight road2" parent="roads/roads3" unique_id=1932677283 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2" unique_id=2092743179 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2" unique_id=1384782235 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2" unique_id=1727591816 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2" unique_id=1381973109 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1504530317 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat" unique_id=902605989 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.35)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=987682437 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2" unique_id=319046914 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2" unique_id=1850250053 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2" unique_id=1299391417 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2" unique_id=2084704866 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1441543437 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1054920118 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1989955791 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1534149016 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1682218678 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=980845191 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=988075603 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=926702233 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1505306897 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=2124742846 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1312517774 instance=ExtResource("3_oss5m")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -28.9, 0, 18)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad" unique_id=1718685337 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.344109, 0, -4.001)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road" unique_id=1993463509 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road" unique_id=1899244444 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road" unique_id=985166648 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road" unique_id=1156919934 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road" unique_id=1672335712 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1909320272 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=593018255 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=507297933 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1625843462 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=212898860 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=799806381 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1278096090 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1659916896 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1965262349 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=1851977639 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 4.72)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road" unique_id=472685087 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road" unique_id=762048973 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road" unique_id=1433447458 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road" unique_id=1157429564 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road" unique_id=2052298347 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1809191787 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1949949183 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=480614060 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1782999951 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=879003224 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=744295583 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1422488126 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=500896210 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads3/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1775876626 instance=ExtResource("3_oss5m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
+
+[node name="roads" parent="roads/roads3" unique_id=643401343 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 29.101397, 0, -4.3606935)
+
+[node name="straight road2" parent="roads/roads3/roads" unique_id=2025167690 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2" unique_id=93226500 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2" unique_id=1667195909 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2" unique_id=1100889162 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2" unique_id=468747814 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=816014724 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+
+[node name="straight roadflat" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat" unique_id=950613682 instance=ExtResource("2_dgxgb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.35)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=1278479795 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2" unique_id=1073908577 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2" unique_id=1791273428 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2" unique_id=1671536822 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2" unique_id=956677674 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=10250987 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1963133416 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=2086383106 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1394414926 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1971406679 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=2142238641 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=2099780282 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=2289829 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1483987729 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="straight road2" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=66306842 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2" unique_id=1857199572 instance=ExtResource("3_oss5m")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -28.9, 0, 18)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad" unique_id=1122900814 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.344109, 0, -4.001)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road" unique_id=162695401 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.7, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road" unique_id=858057839 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road" unique_id=1760018860 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road" unique_id=32935919 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road" unique_id=982810026 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1126998363 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1694760793 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1521359780 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1051434431 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1298083361 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1974586064 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=385245857 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1529877289 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/straight road2/90degturnroad/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=559480414 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354869, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat" unique_id=1278802301 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 4.72)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road" unique_id=1044599925 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road" unique_id=1652129171 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road" unique_id=563127427 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road" unique_id=265228191 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road" unique_id=2058913762 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1885800144 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1464373635 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1941603416 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1424424691 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=723408007 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=541776460 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=58551417 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="straight road" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=1009676337 instance=ExtResource("1_ysdhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 0)
+
+[node name="90degturnroad" parent="roads/roads3/roads/straight road2/straight road2/straight road2/straight road2/straight road2/straight roadflat/straight roadflat/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road/straight road" unique_id=59122046 instance=ExtResource("3_oss5m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
 
 [node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("3_2hbr5")]
