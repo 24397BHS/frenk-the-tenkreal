@@ -22,6 +22,7 @@ sky_material = SubResource("ProceduralSkyMaterial_moxyk")
 background_mode = 2
 sky = SubResource("Sky_m0uej")
 tonemap_mode = 2
+fog_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qy72a"]
 albedo_color = Color(0.24313726, 0.16078432, 0.05882353, 1)
@@ -1515,10 +1516,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 181, 0, 31)
 transform = Transform3D(-0.0037873138, 0, 0.99999285, 0, 1, 0, -0.99999285, 0, -0.0037873138, -203.53777, 2.7510319, 36.414032)
 
 [node name="Badguy2" parent="." unique_id=193676405 instance=ExtResource("3_2hbr5")]
-transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -123.36023, 1.0628978, 2.828999)
+transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -100.06734, 1.0628978, 3.5231636)
 
 [node name="Badguy3" parent="." unique_id=692310804 instance=ExtResource("3_2hbr5")]
-transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -123.42499, 1.0628978, 5.002013)
+transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -100.132095, 1.0628978, 5.6961775)
 
 [node name="Badguy4" parent="." unique_id=819050612 instance=ExtResource("3_2hbr5")]
 transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -21.937117, 1.0628978, 0.705822)
@@ -1527,7 +1528,7 @@ transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.0
 transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -63.00298, 1.0628978, -24.969622)
 
 [node name="Badguy6" parent="." unique_id=1351066119 instance=ExtResource("3_2hbr5")]
-transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -111.71901, 1.0628978, -27.431107)
+transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -58.550068, 1.0628978, -1.6123352)
 
 [node name="Badguy7" parent="." unique_id=737699993 instance=ExtResource("3_2hbr5")]
 transform = Transform3D(0.029788334, 0, 0.99955624, 0, 1, 0, -0.99955624, 0, 0.029788334, -40.53957, 1.0628978, -90.1618)

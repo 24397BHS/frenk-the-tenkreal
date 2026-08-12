@@ -18,7 +18,8 @@ func _ready() -> void:
 func initialize(start_position: Vector3, direction: Vector3, inital_speed: float) -> void:
 	global_position = start_position
 	shot_direction = direction.normalized()
-	bullet_velocity = shot_direction * inital_speed
+	speed = 1200.0 if Global.upgun else inital_speed
+	bullet_velocity = shot_direction * speed
 	speed = inital_speed
 
 func _physics_process(delta: float) -> void:
@@ -43,20 +44,20 @@ func _physics_process(delta: float) -> void:
 		
 		# Check if the object we hit can take damage
 		if collider and collider.has_method("take_damage"):
-			var damage_amount = 50
-			
+			var damage_amount: int = 100 if Global.upgun else 50
 			# Check if this hit will kill the enemy BEFORE applying damage
 			var enemy_will_die = false
 			if "health" in collider:
 				if collider.health <= damage_amount:
 					enemy_will_die = true
-			
+		
 			# Call UI method and pass whether the target was completely destroyed
 			if ui_reference and ui_reference.has_method("show_hit_message"):
 				ui_reference.show_hit_message(enemy_will_die)
 			
 			# Apply damage to the target
 			collider.take_damage(damage_amount)
+		
 		
 		# Move to exact impact position and delete bullet
 		global_position = collision_point

@@ -180,6 +180,7 @@ func _on_player_exited(body):
 
 func take_damage(amount: int) -> void:
 	health -= amount
+	Global.can += 15
 	print("Enemy hit! Health remaining: ", health)
 	if health <= 0:
 		die()

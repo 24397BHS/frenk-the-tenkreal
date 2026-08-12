@@ -5,14 +5,17 @@ extends CanvasLayer
 @onready var Ammo: Label = $Control/Label
 @onready var Health: ProgressBar = $Control/ProgressBar
 @onready var HitTarget: Label = $Control/Label2
+@onready var Can: Label = $Control/Label3
 var fade_tween: Tween
 
 func _ready() -> void:
 	HitTarget.modulate.a = 0.0
 
 func _process(delta: float) -> void:
-	Ammo.text = str(player.ammo) + "/" + str(player.TotAmmo)
+	Ammo.text = str(player.ammo) + "/" + str(Global.MaxAmmo)
 	Health.value = player.health
+	
+	Can.text = str(Global.can)
 	
 
 # ---- UPDATED: Accepts an 'is_destroyed' true/false check ----

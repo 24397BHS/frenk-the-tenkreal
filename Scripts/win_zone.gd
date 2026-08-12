@@ -12,6 +12,7 @@ func _on_body_entered(body: Node3D) -> void:
 	if body is VehicleBody3D:
 		# Free the mouse cursor so the player can interact with the win menu
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		Global.can += 50
 		
 		get_tree().change_scene_to_file("res://Scenes/win.tscn")
 		

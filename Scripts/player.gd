@@ -7,7 +7,6 @@ var ELEV: float = 0.0001
 var look: float = 0.0003
 var turret_rot = 0
 
-var TotAmmo = 25
 var ammo = 1
 @export var Maxhealth = 100
 @export var health = 100
@@ -42,6 +41,8 @@ func _ready() -> void:
 		scope.current = false
 		
 	playerIdleAudioStream.play()
+
+
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("scope"):
@@ -98,6 +99,14 @@ func _process(delta: float) -> void:
 	engine_sound = min(engine_sound, max_pitch)
 	playerIdleAudioStream.pitch_scale = engine_sound
 	
+	#Pause Menu
+	if Input.is_action_just_pressed("Escape"):
+		pass
+		
+		
+func pauseMenu():
+	pass
+	
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if is_free_looking:
@@ -112,10 +121,10 @@ func _input(event: InputEvent) -> void:
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton or InputEventKey:
-		if Input.is_action_just_pressed("fire") and timer.is_stopped() and TotAmmo > 0 and ammo:
+		if Input.is_action_just_pressed("fire") and timer.is_stopped() and Global.MaxAmmo > 0 and ammo:
 			fire()
 		
-	if timer.is_stopped() and TotAmmo > 0:
+	if timer.is_stopped() and Global.MaxAmmo > 0:
 		ammo = 1
 
 func fire():
@@ -133,7 +142,7 @@ func fire():
 		new_shell.get_node("Raycast").add_exception(self)
 		
 	ammo -= 1
-	TotAmmo -= 1
+	Global.MaxAmmo -= 1
 	timer.start()
 
 # Consolidated damage tracking function

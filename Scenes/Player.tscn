@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://hsc6kpi2ltrt" path="res://Grass/TankSight.png" id="5_5ixxa"]
 [ext_resource type="AudioStream" uid="uid://bo624ac5drxdu" path="res://Soundfx/Armored-tank-cannon-fire-single-shot.mp3" id="6_nn08x"]
 [ext_resource type="AudioStream" uid="uid://cx0balk5wouhg" path="res://Soundfx/Sherman idle.mp3" id="8_bhhdu"]
+[ext_resource type="PackedScene" uid="uid://g8qfysqidvjt" path="res://Scenes/pause_menu.tscn" id="8_megsn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibmdi"]
 resource_name = "01 - Default"
@@ -973,6 +974,13 @@ theme_override_font_sizes/font_size = 35
 text = "Hit"
 horizontal_alignment = 1
 
+[node name="Label3" type="Label" parent="CanvasLayer/Control" unique_id=272231633]
+layout_mode = 0
+offset_right = 143.0
+offset_bottom = 51.0
+theme_override_font_sizes/font_size = 25
+text = "Can"
+
 [node name="CooldownTimer" type="Timer" parent="." unique_id=1910581679]
 wait_time = 3.0
 one_shot = true
@@ -1133,3 +1141,5 @@ mesh = SubResource("ArrayMesh_kruf4")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=434220152 groups=["Player"]]
 transform = Transform3D(0.99999994, -3.5527137e-15, 0, 0, 1, 8.4703295e-22, 0, 0, 0.99999994, 0, -0.24, 0.957)
 shape = SubResource("BoxShape3D_kpjcp")
+
+[node name="PauseMenu" parent="." unique_id=623658331 instance=ExtResource("8_megsn")]
