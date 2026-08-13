@@ -404,7 +404,7 @@ transform = Transform3D(-0.19481829, 0, 1.9904888, 0, 2, 0, -1.9904888, 0, -0.19
 transform = Transform3D(1.0003024, 0, 1.7318761, 0, 2, 0, -1.7318761, 0, 1.0003024, 34.253166, 0.0020489097, 162.16757)
 
 [node name="WinZone" parent="." unique_id=1870270549 instance=ExtResource("2_26yhd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -117.969124, 0.25, 107.41572)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -115.22311, 0.5500331, 107.41572)
 
 [node name="Dirt road 1" parent="." unique_id=132684267 instance=ExtResource("3_p3ir5")]
 transform = Transform3D(1.156959, 0, -0.2654215, 0, 0.5, 0, 0.31850582, 0, 0.9641324, 80.94282, -0.076358356, -190.86386)

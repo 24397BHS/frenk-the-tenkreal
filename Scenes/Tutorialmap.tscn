@@ -2,13 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://cgvrbq71cwoig" path="res://Scenes/Player.tscn" id="1_sp0wh"]
 [ext_resource type="PackedScene" uid="uid://cu4p7bwtsqola" path="res://Scenes/forest_a.tscn" id="2_caarn"]
-[ext_resource type="Texture2D" uid="uid://dvcu2lrwfc6ig" path="res://Grass/Objectives.png" id="3_cw2pp"]
 [ext_resource type="PackedScene" uid="uid://orhjqdbx3mkg" path="res://Scenes/win_zone.tscn" id="3_lrk8m"]
-[ext_resource type="PackedScene" uid="uid://nph845663xde" path="res://Scenes/Badguytest.tscn" id="4_lrk8m"]
-[ext_resource type="Texture2D" uid="uid://d4j8bddr0ev02" path="res://Grass/Controls.png" id="4_oues3"]
 [ext_resource type="PackedScene" uid="uid://bpqlvyramrko3" path="res://Scenes/rock.tscn" id="7_c4dmd"]
+[ext_resource type="Texture2D" uid="uid://dhj2266trnyg5" path="res://ControlImages/download.png" id="8_coa25"]
+[ext_resource type="Texture2D" uid="uid://dfhsvgoj1vyol" path="res://ControlImages/Movementcontrols.png" id="8_dxv0h"]
 [ext_resource type="PackedScene" uid="uid://ckuljditaxvh0" path="res://Scenes/bush.tscn" id="8_vw2go"]
 [ext_resource type="PackedScene" uid="uid://d377nrxpv1h6d" path="res://Scenes/dirtroad.tscn" id="9_coa25"]
+[ext_resource type="PackedScene" uid="uid://cdechlxelc3p2" path="res://Scenes/badguyNOSHOOT.tscn" id="10_dxv0h"]
+[ext_resource type="Texture2D" uid="uid://doks7faeoqb6r" path="res://ControlImages/Fire Control.png" id="10_syt18"]
+[ext_resource type="Texture2D" uid="uid://j6jyojokxjmr" path="res://ControlImages/download (1).png" id="11_syt18"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_caarn"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -26,11 +28,17 @@ fog_enabled = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wcy1"]
 albedo_color = Color(0.24313726, 0.16078432, 0.05882353, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cw2pp"]
-albedo_texture = ExtResource("4_oues3")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m3r2u"]
+albedo_texture = ExtResource("8_dxv0h")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8eprm"]
-albedo_texture = ExtResource("3_cw2pp")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dxv0h"]
+albedo_texture = ExtResource("8_coa25")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_awnrv"]
+albedo_texture = ExtResource("10_syt18")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6fjii"]
+albedo_texture = ExtResource("11_syt18")
 
 [node name="Node3D" type="Node3D" unique_id=1827327547]
 
@@ -75,7 +83,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.9577065, 0.010244608, 260.2
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.75238, 0.010244608, 235.1607)
 
 [node name="WinZone" parent="." unique_id=1870270549 instance=ExtResource("3_lrk8m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.46403, 0.25001526, 76.1874)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.46403, 0.5180304, 76.1874)
 
 [node name="Forest A10" parent="." unique_id=1945143668 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.634117, 0.010252237, 51.157005)
@@ -101,26 +109,11 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -62.531796, 0.010229349, 54.0
 [node name="Forest A17" parent="." unique_id=293817792 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 27.148087, 0.010244608, 113.27701)
 
-[node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("4_lrk8m")]
-transform = Transform3D(-0.9999978, 0, -0.0021118228, 0, 1, 0, 0.0021118228, 0, -0.9999978, -9.201645, 1.0891204, 76.69724)
-
 [node name="Forest A19" parent="." unique_id=1222897018 instance=ExtResource("2_caarn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 30.758293, 0.010229349, 206.85455)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=684930523]
-transform = Transform3D(-2, 0, 0, 0, -2, 0, 0, 0, -2, -22.924347, 2.2106814, 207.97302)
-use_collision = true
-size = Vector3(3, 2.392, 0.1)
-material = SubResource("StandardMaterial3D_cw2pp")
-
 [node name="Tank" parent="." unique_id=1924498077 instance=ExtResource("1_sp0wh")]
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, -14.50401, 0.80475485, 223.52312)
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=65875586]
-transform = Transform3D(-2, 0, 0, 0, -2, 0, 0, 0, -2, -1.9440341, 2.185359, 208.1087)
-material_override = SubResource("StandardMaterial3D_8eprm")
-use_collision = true
-size = Vector3(3, 2.3920898, 0.1)
 
 [node name="rock" parent="." unique_id=210338230 instance=ExtResource("7_c4dmd")]
 transform = Transform3D(0.5777437, 0, -0.81621826, 0, 1, 0, 0.81621826, 0, 0.5777437, -20.630438, 0.5781682, 199.32257)
@@ -188,8 +181,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 [node name="Dirtroadstraight2" parent="Dirtroadstraight/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2/Dirtroadstraight2" unique_id=1357912755 instance=ExtResource("9_coa25")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 
-[node name="Badguy2" parent="." unique_id=38335214 instance=ExtResource("4_lrk8m")]
-transform = Transform3D(-0.9999978, 0, -0.0021118228, 0, 1, 0, 0.0021118228, 0, -0.9999978, -31.076134, 1.0891204, 71.423775)
-
 [node name="rock2" parent="." unique_id=2020439778 instance=ExtResource("7_c4dmd")]
 transform = Transform3D(0.07028328, 0, 0.59586936, 0, 0.6, 0, -0.59586936, 0, 0.07028328, -31.225004, 0.22311336, 74.01987)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1356289125]
+transform = Transform3D(-0.944089, 0, -0.32969064, 0, -1, 0, 0.32969064, 0, -0.944089, -21.333485, 1.2529297, 205.981)
+material_override = SubResource("StandardMaterial3D_m3r2u")
+use_collision = true
+size = Vector3(3.949, 2.5, 1)
+material = SubResource("StandardMaterial3D_dxv0h")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=545288985]
+transform = Transform3D(-0.8073415, 0, -0.59008443, 0, -1, 0, 0.59008443, 0, -0.8073415, -21.333485, 1.2529297, 187.1098)
+material_override = SubResource("StandardMaterial3D_awnrv")
+use_collision = true
+size = Vector3(3.949, 2.5, 1)
+material = SubResource("StandardMaterial3D_dxv0h")
+
+[node name="BadguyNS" parent="." unique_id=452860622 instance=ExtResource("10_dxv0h")]
+transform = Transform3D(-0.15864071, 0, -0.98733634, 0, 1, 0, 0.98733634, 0, -0.15864071, -23.119768, 1.0207136, 182.45657)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=825179657]
+transform = Transform3D(-0.8073415, 0, -0.59008443, 0, -1, 0, 0.59008443, 0, -0.8073415, -21.333485, 1.2529297, 174.38667)
+material_override = SubResource("StandardMaterial3D_6fjii")
+use_collision = true
+size = Vector3(3.949, 2.5, 1)
+material = SubResource("StandardMaterial3D_dxv0h")
+
+[node name="BadguyNS2" parent="." unique_id=2120711174 instance=ExtResource("10_dxv0h")]
+transform = Transform3D(-0.99547285, 0, 0.095046505, 0, 1, 0, -0.095046505, 0, -0.99547285, -8.852184, 1.0128927, 75.00931)
+
+[node name="BadguyNS3" parent="." unique_id=278884453 instance=ExtResource("10_dxv0h")]
+transform = Transform3D(-0.99547285, 0, 0.095046505, 0, 1, 0, -0.095046505, 0, -0.99547285, -31.40825, 1.0128927, 70.845924)

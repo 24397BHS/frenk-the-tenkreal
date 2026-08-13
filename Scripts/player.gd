@@ -30,6 +30,8 @@ var is_scoping: bool = false
 @onready var sight = $CanvasLayer/Control/TextureRect
 @onready var playerShootAudioStream = $AudioStreamPlayer_Fire
 @onready var playerIdleAudioStream = $AudioStreamPlayer_idle
+@onready var pause_menu  = $CanvasLayer/PauseMenu
+var paused = false
 
 var target_yaw: float = 0.0
 var is_free_looking: bool = false
@@ -39,7 +41,6 @@ func _ready() -> void:
 	if camera:
 		camera.current = true
 		scope.current = false
-		
 	playerIdleAudioStream.play()
 
 
@@ -60,6 +61,9 @@ func update_cameras() -> void:
 			camera.current = true
 			scope.current = false
 			sight.hide()
+			
+	
+		
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Freelook"):
@@ -101,11 +105,23 @@ func _process(delta: float) -> void:
 	
 	#Pause Menu
 	if Input.is_action_just_pressed("Escape"):
-		pass
+		pauseMenu()
 		
 		
 func pauseMenu():
-	pass
+	if paused:
+		pause_menu.hide()
+		Engine.time_scale = 1
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	else:
+		pause_menu.show()
+		Engine.time_scale = 0
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	
+	paused = !paused
+
+	
+	
 	
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -121,7 +137,7 @@ func _input(event: InputEvent) -> void:
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton or InputEventKey:
-		if Input.is_action_just_pressed("fire") and timer.is_stopped() and Global.MaxAmmo > 0 and ammo:
+		if Input.is_action_just_pressed("fire") and timer.is_stopped() and Global.MaxAmmo > 0 and ammo and paused == false:
 			fire()
 		
 	if timer.is_stopped() and Global.MaxAmmo > 0:

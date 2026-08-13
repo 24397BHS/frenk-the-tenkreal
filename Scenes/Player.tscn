@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cissjou6ifpq6" path="res://Scripts/player.gd" id="1_kne1u"]
 [ext_resource type="Texture2D" uid="uid://2ybo27ree5r5" path="res://Shermanfiles/t1.jpg" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://bykno47ar1sgg" path="res://Shermanfiles/4abd7b54 copy.jpg" id="1_xhfnw"]
+[ext_resource type="Script" uid="uid://dvx5wj5vd4rm8" path="res://Scripts/ScopeCam.gd" id="3_megsn"]
 [ext_resource type="Script" uid="uid://dluwsqpgojlkd" path="res://Scripts/canvas_layer.gd" id="4_e80uo"]
 [ext_resource type="Texture2D" uid="uid://hsc6kpi2ltrt" path="res://Grass/TankSight.png" id="5_5ixxa"]
 [ext_resource type="AudioStream" uid="uid://bo624ac5drxdu" path="res://Soundfx/Armored-tank-cannon-fire-single-shot.mp3" id="6_nn08x"]
@@ -843,7 +844,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_1t040")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kpjcp"]
-size = Vector3(1.755249, 1.0482788, 3.9560394)
+size = Vector3(1.755249, 1.0482788, 3.8651104)
 
 [node name="Tank" type="VehicleBody3D" unique_id=1924498077 groups=["Player"]]
 mass = 1000.0
@@ -873,6 +874,7 @@ transform = Transform3D(1, 4.2351647e-22, 0, 0, 1, -7.1054265e-15, 0, -7.105426e
 [node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))" unique_id=2051822068]
 transform = Transform3D(-5.138098e-08, -1.4210855e-14, -1.1754596, -3.07943e-14, 1.1754594, -2.4868996e-14, 1.1754596, 4.1791244e-14, -5.138098e-08, -2.3841858e-07, -0.116583854, 0.23825389)
 fov = 35.0
+script = ExtResource("3_megsn")
 
 [node name="neck" type="Node3D" parent="Body/Сombat_Tower" unique_id=1248454130]
 transform = Transform3D(1, 0, 0, 0, 1, -1.4210854e-14, 0, 9.529125e-22, 1, -0.15390348, 0.49586362, 0.33184063)
@@ -980,6 +982,9 @@ offset_right = 143.0
 offset_bottom = 51.0
 theme_override_font_sizes/font_size = 25
 text = "Can"
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=623658331 instance=ExtResource("8_megsn")]
+visible = false
 
 [node name="CooldownTimer" type="Timer" parent="." unique_id=1910581679]
 wait_time = 3.0
@@ -1139,7 +1144,5 @@ transform = Transform3D(-3.719839e-08, -7.2082515e-22, -0.851, 0, 0.851, -7.2082
 mesh = SubResource("ArrayMesh_kruf4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=434220152 groups=["Player"]]
-transform = Transform3D(0.99999994, -3.5527137e-15, 0, 0, 1, 8.4703295e-22, 0, 0, 0.99999994, 0, -0.24, 0.957)
+transform = Transform3D(0.99999994, -3.5527137e-15, 0, 0, 1, 8.4703295e-22, 0, 0, 0.99999994, 0, -0.24, 0.5920756)
 shape = SubResource("BoxShape3D_kpjcp")
-
-[node name="PauseMenu" parent="." unique_id=623658331 instance=ExtResource("8_megsn")]
