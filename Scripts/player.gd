@@ -8,6 +8,7 @@ var look: float = 0.0003
 var turret_rot = 0
 
 var ammo = 1
+var MaxAmmo = 25 + Global.MaxAmmo
 @export var Maxhealth = 100
 @export var health = 100
 
@@ -137,10 +138,10 @@ func _input(event: InputEvent) -> void:
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton or InputEventKey:
-		if Input.is_action_just_pressed("fire") and timer.is_stopped() and Global.MaxAmmo > 0 and ammo and paused == false:
+		if Input.is_action_just_pressed("fire") and timer.is_stopped() and MaxAmmo > 0 and ammo and paused == false:
 			fire()
 		
-	if timer.is_stopped() and Global.MaxAmmo > 0:
+	if timer.is_stopped() and MaxAmmo > 0:
 		ammo = 1
 
 func fire():
@@ -158,7 +159,7 @@ func fire():
 		new_shell.get_node("Raycast").add_exception(self)
 		
 	ammo -= 1
-	Global.MaxAmmo -= 1
+	MaxAmmo -= 1
 	timer.start()
 
 # Consolidated damage tracking function

@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://dluwsqpgojlkd" path="res://Scripts/canvas_layer.gd" id="4_e80uo"]
 [ext_resource type="Texture2D" uid="uid://hsc6kpi2ltrt" path="res://Grass/TankSight.png" id="5_5ixxa"]
 [ext_resource type="AudioStream" uid="uid://bo624ac5drxdu" path="res://Soundfx/Armored-tank-cannon-fire-single-shot.mp3" id="6_nn08x"]
+[ext_resource type="Texture2D" uid="uid://dtomvvuj8ton1" path="res://Grass/Can-1.png.png" id="7_yoq75"]
 [ext_resource type="AudioStream" uid="uid://cx0balk5wouhg" path="res://Soundfx/Sherman idle.mp3" id="8_bhhdu"]
 [ext_resource type="PackedScene" uid="uid://g8qfysqidvjt" path="res://Scenes/pause_menu.tscn" id="8_megsn"]
 
@@ -978,10 +979,17 @@ horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="CanvasLayer/Control" unique_id=272231633]
 layout_mode = 0
-offset_right = 143.0
+offset_left = 38.0
+offset_right = 181.0
 offset_bottom = 51.0
 theme_override_font_sizes/font_size = 25
 text = "Can"
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control" unique_id=700065]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("7_yoq75")
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=623658331 instance=ExtResource("8_megsn")]
 visible = false

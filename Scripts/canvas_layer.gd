@@ -12,7 +12,7 @@ func _ready() -> void:
 	HitTarget.modulate.a = 0.0
 
 func _process(delta: float) -> void:
-	Ammo.text = str(player.ammo) + "/" + str(Global.MaxAmmo)
+	Ammo.text = str(player.ammo) + "/" + str(player.MaxAmmo)
 	Health.value = player.health
 	
 	Can.text = str(Global.can)

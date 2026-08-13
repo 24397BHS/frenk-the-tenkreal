@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://j1iw1sw5jyug"]
 
 [ext_resource type="Script" uid="uid://bmfdxjhx216ky" path="res://Scripts/shop.gd" id="1_kjfcx"]
+[ext_resource type="Texture2D" uid="uid://dtomvvuj8ton1" path="res://Grass/Can-1.png.png" id="2_iidq5"]
 
 [node name="Control" type="Control" unique_id=1690552050]
 layout_mode = 3
@@ -38,10 +39,17 @@ text = "Back"
 
 [node name="Label" type="Label" parent="." unique_id=1087040321]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 38.0
+offset_right = 84.0
+offset_bottom = 35.0
 theme_override_font_sizes/font_size = 25
 text = "Can"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=593013605]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_iidq5")
 
 [connection signal="pressed" from="purchase 76 sherman" to="." method="_on_purchase_76_sherman_pressed"]
 [connection signal="pressed" from="+10 Ammo" to="." method="_on__ammo_pressed"]

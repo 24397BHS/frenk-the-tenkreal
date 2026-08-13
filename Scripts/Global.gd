@@ -2,6 +2,7 @@ extends Node
 
 var level = 1
 
-var can = 300
+var can = 0
 var upgun = false
-var MaxAmmo = 25
+var MaxAmmo = 0
+var MasterSound = 50 
