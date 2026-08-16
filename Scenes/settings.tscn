@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://bbw82ytowiaal"]
+
+[ext_resource type="Script" uid="uid://cyj1re0c6rkfv" path="res://Scripts/settings.gd" id="1_4geyq"]
+[ext_resource type="Script" uid="uid://donhsf5t4f4te" path="res://Scripts/master_slide.gd" id="2_i44u3"]
+
+[node name="Settings" type="Control" unique_id=1599323074]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4geyq")
+
+[node name="Settings" type="Label" parent="." unique_id=1855765581]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -31.0
+offset_right = 31.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Settings"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=981476702]
+y_sort_enabled = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -57.0
+offset_right = 24.5
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Master" type="Label" parent="VBoxContainer" unique_id=1480771113]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Master"
+
+[node name="MasterSlide" type="HSlider" parent="VBoxContainer/Master" unique_id=1042747869]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.0
+offset_top = 12.5
+offset_right = 295.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("2_i44u3")
+bus_name = "Master"
+
+[node name="Blank" type="Label" parent="VBoxContainer" unique_id=1696478242]
+layout_mode = 2
+
+[node name="Master2" type="Label" parent="VBoxContainer" unique_id=1073772163]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SFX"
+
+[node name="SFXSlide" type="HSlider" parent="VBoxContainer/Master2" unique_id=1994615674]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.0
+offset_top = 12.5
+offset_right = 295.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("2_i44u3")
+bus_name = "SFX"
+
+[node name="Blank2" type="Label" parent="VBoxContainer" unique_id=1856829696]
+layout_mode = 2
+
+[node name="Music" type="Label" parent="VBoxContainer" unique_id=220438507]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Music"
+
+[node name="MusicSlide" type="HSlider" parent="VBoxContainer/Music" unique_id=1335648374]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.0
+offset_top = 12.5
+offset_right = 295.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("2_i44u3")
+bus_name = "Music"
+
+[node name="Back" type="Button" parent="." unique_id=873928028]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

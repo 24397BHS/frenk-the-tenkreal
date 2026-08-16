@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dryp4u77yq6th"]
+
+[ext_resource type="Script" uid="uid://donhsf5t4f4te" path="res://Scripts/master_slide.gd" id="1_ra8j0"]
+
+[node name="MasterSlide" type="HSlider" unique_id=1016473019]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.0
+offset_top = 12.5
+offset_right = 295.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("1_ra8j0")
+bus_name = "Master"

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://g8qfysqidvjt"]
 
 [ext_resource type="Script" uid="uid://nc3wijocub3b" path="res://Scripts/pause_menu.gd" id="1_emv3i"]
+[ext_resource type="PackedScene" uid="uid://dryp4u77yq6th" path="res://Scenes/master_slide.tscn" id="2_k0w1u"]
 
 [node name="PauseMenu" type="Control" unique_id=623658331]
 layout_mode = 3
@@ -33,9 +34,82 @@ size_flags_horizontal = 4
 layout_mode = 2
 text = "Resume"
 
+[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer" unique_id=509666604]
+layout_mode = 2
+text = "Settings"
+
 [node name="Main Menu" type="Button" parent="MarginContainer/VBoxContainer" unique_id=376898776]
 layout_mode = 2
 text = "Main Menu"
 
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1384625297]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -163.0
+offset_right = 256.0
+offset_bottom = 163.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer2" unique_id=528858012]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer2/Panel" unique_id=171943017]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 512.0
+offset_bottom = 74.0
+text = "Settings
+
+Master"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2/Panel" unique_id=1665639581]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="MarginContainer2/Panel/VBoxContainer" unique_id=1186340004]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "X"
+
+[node name="MasterSlide" parent="MarginContainer2/Panel/VBoxContainer" unique_id=1016473019 instance=ExtResource("2_k0w1u")]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="MarginContainer2/Panel/VBoxContainer" unique_id=282313739]
+layout_mode = 2
+text = "
+
+SFX"
+horizontal_alignment = 1
+
+[node name="MasterSlide2" parent="MarginContainer2/Panel/VBoxContainer" unique_id=1480703704 instance=ExtResource("2_k0w1u")]
+layout_mode = 2
+bus_name = "SFX"
+
+[node name="Label3" type="Label" parent="MarginContainer2/Panel/VBoxContainer" unique_id=777260019]
+layout_mode = 2
+text = "
+
+Music"
+horizontal_alignment = 1
+
+[node name="MasterSlide3" parent="MarginContainer2/Panel/VBoxContainer" unique_id=1572011330 instance=ExtResource("2_k0w1u")]
+layout_mode = 2
+bus_name = "Music"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="MarginContainer2/Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]
