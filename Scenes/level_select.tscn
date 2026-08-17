@@ -2,6 +2,19 @@
 
 [ext_resource type="Script" uid="uid://c4gad0emkdibw" path="res://Scripts/level_select.gd" id="1_ycuq1"]
 [ext_resource type="Texture2D" uid="uid://dtomvvuj8ton1" path="res://Grass/Can-1.png.png" id="2_nkys2"]
+[ext_resource type="PackedScene" uid="uid://cl7rx8u38mjms" path="res://Environment/Briefingroom.fbx" id="3_lx4vd"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2sqnl"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_72w8f"]
+sky_material = SubResource("ProceduralSkyMaterial_2sqnl")
+
+[sub_resource type="Environment" id="Environment_s6o25"]
+background_mode = 2
+sky = SubResource("Sky_72w8f")
+tonemap_mode = 2
 
 [node name="Control" type="Control" unique_id=1465284390]
 layout_mode = 3
@@ -84,6 +97,20 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_nkys2")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1003161132]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D" unique_id=934334123]
+environment = SubResource("Environment_s6o25")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node3D" unique_id=536988498]
+transform = Transform3D(-0.8660254, -0.50000006, -2.1855696e-08, 0, -4.371139e-08, 1, -0.50000006, 0.8660254, 3.7855173e-08, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Briefingroom" parent="Node3D" unique_id=653285496 instance=ExtResource("3_lx4vd")]
+
+[node name="Camera3D" type="Camera3D" parent="Node3D/Briefingroom" unique_id=861196923]
+transform = Transform3D(0.6639262, 0.31366548, -0.67883426, 0, 0.9077775, 0.4194521, 0.7477981, -0.27848524, 0.60269725, -0.39002433, 0.5410489, 0.27684724)
 
 [connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="pressed" from="Level 1" to="." method="_on_level_1_pressed"]
