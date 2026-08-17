@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://g3nnv53oj7a"]
+
+[ext_resource type="AudioStream" uid="uid://oym4pp3wcq0i" path="res://Music/New_Project.mp3" id="1_30mse"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=2028686105]
+stream = ExtResource("1_30mse")
+volume_db = -15.0
+autoplay = true
+bus = &"Music"
