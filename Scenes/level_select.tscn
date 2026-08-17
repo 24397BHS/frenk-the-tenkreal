@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dvx0q0jfi5tnb"]
+[gd_scene format=3 uid="uid://mlbyw2p2a5tb"]
 
 [ext_resource type="Script" uid="uid://c4gad0emkdibw" path="res://Scripts/level_select.gd" id="1_ycuq1"]
 [ext_resource type="Texture2D" uid="uid://dtomvvuj8ton1" path="res://Grass/Can-1.png.png" id="2_nkys2"]
@@ -16,7 +16,7 @@ background_mode = 2
 sky = SubResource("Sky_72w8f")
 tonemap_mode = 2
 
-[node name="Control" type="Control" unique_id=1465284390]
+[node name="Control2" type="Control" unique_id=1465284390]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
