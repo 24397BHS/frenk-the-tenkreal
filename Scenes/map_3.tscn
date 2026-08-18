@@ -1,5 +1,21 @@
 [gd_scene format=4 uid="uid://bn5b35kn70mmf"]
 
+[ext_resource type="PackedScene" uid="uid://nph845663xde" path="res://Scenes/Badguytest.tscn" id="1_vma17"]
+[ext_resource type="PackedScene" uid="uid://cgvrbq71cwoig" path="res://Scenes/Player.tscn" id="2_xtteh"]
+[ext_resource type="PackedScene" uid="uid://orhjqdbx3mkg" path="res://Scenes/win_zone.tscn" id="3_57v0g"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vma17"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_xtteh"]
+sky_material = SubResource("ProceduralSkyMaterial_vma17")
+
+[sub_resource type="Environment" id="Environment_57v0g"]
+background_mode = 2
+sky = SubResource("Sky_xtteh")
+tonemap_mode = 2
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kn3cv"]
 resource_name = "Material"
 vertex_color_use_as_albedo = true
@@ -232,13 +248,22 @@ shadow_mesh = SubResource("ArrayMesh_q41to")
 points = PackedVector3Array(-0.007659032, -0.0012309968, -0.009356732, 0.01020585, 0.00046859193, 0.0029767784, 0.009780163, 0.0017455317, 0.004250637, -0.003404156, -0.0042075254, 0.011059651, -0.0038298436, 0.0068487944, 0.0051034293, 0.0055252872, -0.0020807912, -0.011483382, 0.0021217864, 0.005997501, -0.008933, 0.0021217864, -0.0076111993, -0.0029767784, -0.009359783, -0.003357731, 0.0029767784, 0.0038225374, -0.0016566435, 0.012757241, -0.008508408, 0.0042964136, -0.0038269057, -0.006807657, 0.002595326, 0.009783127, 0.0033988485, 0.005997501, 0.008080208, 0.007228037, -0.005484465, 0.0038269057, 0.0085031, 0.004297912, -0.0038269057, -0.0038298436, -0.006759906, -0.0055298256, -0.0029804672, 0.001319885, -0.013186302, -0.00042834124, -0.0071855527, 0.005953557, 0.008928789, -0.0029320843, -0.0055271606, 0.000844724, 0.0077000875, -0.0029767784, -0.0025547799, -0.0042075254, -0.011483382, -0.0021290923, 0.0030209725, 0.012757241, 0.0050995997, 0.002595326, -0.011483382, -0.010211159, 0.0017455317, 0.00085012737, -0.0051049073, 0.005997501, -0.0063772877, 0.0050995997, 0.002595326, 0.011483382, 0.007228037, 0.0055733533, 0.0034005095, -0.0051049073, -0.006759906, 0.0029767784, 0.0038225374, -0.0059086126, -0.008080208, -0.00808472, -0.0042075254, -0.0055298256, 0.006376662, -0.003357731, 0.009783127, -0.0072333445, -0.0003797037, 0.010206859)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2tdgh"]
+size = Vector3(1, 8.808594, 21.472412)
 
 [node name="Map 3" type="Node3D" unique_id=606099596]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2119929475]
+environment = SubResource("Environment_57v0g")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1902886192]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=491593227]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="Plane" type="MeshInstance3D" parent="StaticBody3D" unique_id=2106226614]
-transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
+transform = Transform3D(100, 0, 0, 0, -4.3711384e-06, 99.99999, 0, -99.99999, -4.3711384e-06, 0, 0, 0)
 mesh = SubResource("ArrayMesh_s7kkj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1093288578]
@@ -278,5 +303,47 @@ transform = Transform3D(1034.7838, -1.386957e-14, 7.8620636e-14, -7.8620636e-14,
 shape = SubResource("ConvexPolygonShape3D_vma17")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D" unique_id=1847628855]
-transform = Transform3D(0.7418705, 0, 0.6705432, 0, 1, 0, -0.6705432, 0, 0.7418705, 29.17168, 0, 335.79208)
+transform = Transform3D(0.74601746, 0.003347161, 0.6659181, 0.0021302674, 0.99997026, -0.007412701, -0.6659231, 0.006948574, 0.7459881, 27.27827, 3.9152215, 333.68365)
 shape = SubResource("BoxShape3D_2tdgh")
+
+[node name="Tank" parent="." unique_id=1924498077 instance=ExtResource("2_xtteh")]
+transform = Transform3D(-0.42505267, 0, 0.9051686, 0, 1, 0, -0.9051686, 0, -0.42505267, 33.288326, 0.5982585, 155.01888)
+
+[node name="Badguy" parent="." unique_id=452860622 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.9933165, 0, 0.11542254, 0, 1, 0, -0.11542254, 0, -0.9933165, 89.567116, 0.94320273, 84.0421)
+hit_chance = 0.6
+
+[node name="Badguy2" parent="." unique_id=986407541 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.9933165, 0, 0.11542254, 0, 1, 0, -0.11542254, 0, -0.9933165, 92.29048, 0.94320273, 84.0421)
+hit_chance = 0.6
+
+[node name="Badguy3" parent="." unique_id=538203984 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.9933165, 0, 0.11542254, 0, 1, 0, -0.11542254, 0, -0.9933165, 94.60088, 0.94320273, 84.0421)
+hit_chance = 0.6
+
+[node name="Badguy4" parent="." unique_id=629368305 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.78466827, 0, -0.6199159, 0, 1, 0, 0.6199159, 0, -0.78466827, 76.11034, 1.0128832, 11.774554)
+
+[node name="Badguy5" parent="." unique_id=405226873 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.106732726, 0, -0.9942877, 0, 1, 0, 0.9942877, 0, -0.106732726, 54.611786, 1.0128832, 8.250468)
+
+[node name="Badguy6" parent="." unique_id=1146701201 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.78466827, 0, -0.6199159, 0, 1, 0, 0.6199159, 0, -0.78466827, 38.590923, 1.0128832, -5.4322042)
+
+[node name="Badguy7" parent="." unique_id=124846499 instance=ExtResource("1_vma17")]
+transform = Transform3D(0.44551033, 0, -0.8952769, 0, 1, 0, 0.8952769, 0, 0.44551033, -19.334127, 1.0128832, -1.1775928)
+
+[node name="Badguy8" parent="." unique_id=405556491 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.14307818, 0, -0.9897114, 0, 1, 0, 0.9897114, 0, -0.14307818, -19.334127, 1.0128832, -6.000697)
+
+[node name="WinZone" parent="." unique_id=1870270549 instance=ExtResource("3_57v0g")]
+transform = Transform3D(0.6461506, 0, -0.76321006, 0, 1, 0, 0.76321006, 0, 0.6461506, -21.07333, 0.7059094, -2.8428059)
+
+[node name="Badguy9" parent="." unique_id=300425942 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.46962577, 0, -0.8828656, 0, 1, 0, 0.8828656, 0, -0.46962577, 32.82506, 1.0128832, -5.4322042)
+
+[node name="Badguy10" parent="." unique_id=2040045143 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.9253687, 0, -0.37906852, 0, 1, 0, 0.37906852, 0, -0.9253687, 85.2469, 19.245104, 3.6439831)
+
+[node name="Badguy11" parent="." unique_id=510811143 instance=ExtResource("1_vma17")]
+transform = Transform3D(-0.99999475, 0, -0.0032636523, 0, 1, 0, 0.0032636523, 0, -0.99999475, 87.624565, 19.23719, 3.638507)
