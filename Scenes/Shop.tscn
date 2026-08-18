@@ -30,6 +30,16 @@ offset_bottom = 216.0
 text = "Larger Ammo Stowage
 50"
 
+[node name="LoaderUp" type="Button" parent="." unique_id=1611996064]
+layout_mode = 0
+offset_left = 559.0
+offset_top = 129.0
+offset_right = 743.0
+offset_bottom = 216.0
+text = "Improved Ammo
+Handling
+100"
+
 [node name="Back" type="Button" parent="." unique_id=13893497]
 layout_mode = 0
 offset_left = 1100.0
@@ -53,4 +63,5 @@ texture = ExtResource("2_iidq5")
 
 [connection signal="pressed" from="purchase 76 sherman" to="." method="_on_purchase_76_sherman_pressed"]
 [connection signal="pressed" from="+10 Ammo" to="." method="_on__ammo_pressed"]
+[connection signal="pressed" from="LoaderUp" to="." method="_on_loader_up_pressed"]
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

@@ -22,3 +22,11 @@ func _on__ammo_pressed() -> void:
 
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Level_Select.tscn")
+
+
+func _on_loader_up_pressed() -> void:
+	if Global.can >= 100 and Global.Stronk == false:
+		Global.can -= 100
+		Global.Stronk = true
+		$LoaderUp.disabled = true
+		

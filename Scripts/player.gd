@@ -43,6 +43,8 @@ func _ready() -> void:
 		camera.current = true
 		scope.current = false
 	playerIdleAudioStream.play()
+	if Global.Stronk == true:
+		timer.wait_time = 1.5
 
 
 
