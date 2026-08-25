@@ -29,4 +29,4 @@ func _on_level_3_pressed() -> void:
 
 
 func _on_shop_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Shop.tscn")
+	get_tree().change_scene_to_file("res://shop3d.tscn")

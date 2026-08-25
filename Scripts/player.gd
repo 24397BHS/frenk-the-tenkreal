@@ -19,8 +19,8 @@ var is_scoping: bool = false
 @onready var right_wheels = [$RightWheel1, $RightWheel2, $RightWheel3, $RightWheel4, 
 							$RightWheel5, $RightWheel6, $RightWheel7]
  
-@onready var right_tread = $Body/RightTread
-@onready var left_tread = $Body/LeftTread
+@onready var right_tread = $RightTread
+@onready var left_tread = $LeftTread
 @onready var camera = $"Body/Сombat_Tower/neck/Camera3D"
 @onready var scope = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))/Camera3D"
 @onready var neck = $"Body/Сombat_Tower/neck"
@@ -31,6 +31,7 @@ var is_scoping: bool = false
 @onready var sight = $CanvasLayer/Control/TextureRect
 @onready var playerShootAudioStream = $AudioStreamPlayer_Fire
 @onready var playerIdleAudioStream = $AudioStreamPlayer_idle
+@onready var playerHitAudioStream = $AudioStreamPlayer_Hit
 @onready var pause_menu  = $CanvasLayer/PauseMenu
 var paused = false
 
@@ -46,7 +47,9 @@ func _ready() -> void:
 	if Global.Stronk == true:
 		timer.wait_time = 1.5
 
-
+	if Global.upgun ==true:
+		$"Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))2".show()
+		$"Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))".hide()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("scope"):
@@ -167,6 +170,7 @@ func fire():
 # Consolidated damage tracking function
 func take_damage(amount: float) -> void:
 	health -= amount
+	playerHitAudioStream.play()
 	
 	if health <= 0:
 		die()

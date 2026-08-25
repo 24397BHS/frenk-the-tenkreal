@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://dlsdttn57x06b" path="res://Scenes/rockbushgroup.tscn" id="17_yumab"]
 [ext_resource type="PackedScene" uid="uid://ckuljditaxvh0" path="res://Scenes/bush.tscn" id="18_tx4ui"]
 [ext_resource type="PackedScene" uid="uid://bpqlvyramrko3" path="res://Scenes/rock.tscn" id="19_tx4ui"]
+[ext_resource type="PackedScene" uid="uid://d377nrxpv1h6d" path="res://Scenes/dirtroad.tscn" id="19_wtltt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_moxyk"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1739,3 +1740,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202.39696, 0.002050817, 26.3
 
 [node name="Forest A139" parent="." unique_id=116019064 instance=ExtResource("5_ib45y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -213.3633, 0.0020489097, 38.96429)
+
+[node name="Badguy8" parent="." unique_id=1217511737 instance=ExtResource("3_2hbr5")]
+transform = Transform3D(-0.9332611, 0, 0.3591987, 0, 1, 0, -0.3591987, 0, -0.9332611, 72.74965, 1.0128946, -6.023387)
+
+[node name="Badguy9" parent="." unique_id=1514110516 instance=ExtResource("3_2hbr5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.10245, 1.0128951, 5.0663357)
+
+[node name="Badguy10" parent="." unique_id=1850899496 instance=ExtResource("3_2hbr5")]
+transform = Transform3D(-0.65451646, 0, 0.7560478, 0, 1, 0, -0.7560478, 0, -0.65451646, 131.78055, 1.0128946, -15.020019)
+
+[node name="Dirtroadstraight" parent="." unique_id=132684267 instance=ExtResource("19_wtltt")]
+transform = Transform3D(0.27012497, 0, -0.9743347, 0, 0.5, 0, 1.1692017, 0, 0.22510412, -75.22656, -9.536743e-07, -0.78867257)
+
+[node name="Dirtroadstraight" parent="Dirtroadstraight" unique_id=1668258567 instance=ExtResource("19_wtltt")]
+transform = Transform3D(1, 0, 1.2417635e-08, 0, 1, 0, -1.2417635e-08, 0, 1, -9.533964e-07, -0.0041418076, -5.9881887)
+
+[node name="Dirtroadstraight" parent="Dirtroadstraight/Dirtroadstraight" unique_id=1035379714 instance=ExtResource("19_wtltt")]
+transform = Transform3D(1, 0, 1.2417635e-08, 0, 1, 0, -1.2417635e-08, 0, 1, -4.4935444e-12, 0, -5.992612)
+
+[node name="Dirtroadstraight" parent="Dirtroadstraight/Dirtroadstraight/Dirtroadstraight" unique_id=1543727749 instance=ExtResource("19_wtltt")]
+transform = Transform3D(1, 0, 1.2417635e-08, 0, 0.5, 0, -1.2417635e-08, 0, 1, -9.536743e-07, -0.0041418076, -6.0105705)

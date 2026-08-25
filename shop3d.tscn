@@ -1,0 +1,240 @@
+[gd_scene format=3 uid="uid://dxxlha7c0n43f"]
+
+[ext_resource type="Script" uid="uid://cbgw734x2nkcj" path="res://Scripts/shop_3d.gd" id="1_bwpqi"]
+[ext_resource type="PackedScene" uid="uid://b1ap5bg7bd0m8" path="res://Shermanfiles/M4-76.fbx" id="1_e2km4"]
+[ext_resource type="PackedScene" uid="uid://bg6whktq1xrh" path="res://Shermanfiles/shermanfix.fbx" id="2_mljsy"]
+[ext_resource type="Texture2D" uid="uid://cwnfeosvo4wij" path="res://textures/76shell.png" id="3_hkqtx"]
+[ext_resource type="Texture2D" uid="uid://cgmh6geir3src" path="res://textures/Reduced Reaload rate.png" id="4_hkqtx"]
+[ext_resource type="Texture2D" uid="uid://b2uncfr0b1mfl" path="res://textures/+shells.png" id="5_bwpqi"]
+[ext_resource type="Texture2D" uid="uid://dtomvvuj8ton1" path="res://Grass/Can-1.png.png" id="7_lewhx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e2km4"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_mljsy"]
+sky_material = SubResource("ProceduralSkyMaterial_e2km4")
+
+[sub_resource type="Environment" id="Environment_hkqtx"]
+background_mode = 2
+sky = SubResource("Sky_mljsy")
+tonemap_mode = 2
+
+[sub_resource type="Animation" id="Animation_bwpqi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Marker3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lewhx"]
+resource_name = "Spin"
+length = 30.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Marker3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 30),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.2831855, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q8l8r"]
+_data = {
+&"RESET": SubResource("Animation_bwpqi"),
+&"Spin": SubResource("Animation_lewhx")
+}
+
+[node name="Node3D" type="Node3D" unique_id=1277379757]
+script = ExtResource("1_bwpqi")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=878849654]
+environment = SubResource("Environment_hkqtx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1994762446]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=715483591]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1724002388]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1389471449]
+
+[node name="Marker3D" type="Marker3D" parent="." unique_id=1231447624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.41, -4.691)
+
+[node name="M4-76" parent="Marker3D" unique_id=518039939 instance=ExtResource("1_e2km4")]
+visible = false
+
+[node name="shermanfix" parent="Marker3D" unique_id=2105923708 instance=ExtResource("2_mljsy")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=612949567]
+root_node = NodePath("../SubViewportContainer/SubViewport")
+libraries/ = SubResource("AnimationLibrary_q8l8r")
+autoplay = &"Spin"
+
+[node name="Control" type="Control" parent="." unique_id=1324668643]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="Control" unique_id=1147199080]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Control" unique_id=452459952]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -277.0
+offset_right = 20.0
+offset_bottom = -164.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Upgun" type="Button" parent="Control/Control/HBoxContainer" unique_id=1331615261]
+custom_minimum_size = Vector2(160, 100)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Control/HBoxContainer/Upgun" unique_id=318879140]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_hkqtx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control/Control/HBoxContainer/Upgun/TextureRect" unique_id=685721756]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 113.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "150 Can"
+horizontal_alignment = 1
+
+[node name="Reduced" type="Button" parent="Control/Control/HBoxContainer" unique_id=559094315]
+custom_minimum_size = Vector2(160, 100)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Control/HBoxContainer/Reduced" unique_id=1423764812]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_hkqtx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control/Control/HBoxContainer/Reduced/TextureRect" unique_id=903339578]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 113.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "100 Can"
+horizontal_alignment = 1
+
+[node name="Moar" type="Button" parent="Control/Control/HBoxContainer" unique_id=2025347643]
+custom_minimum_size = Vector2(160, 100)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Control/HBoxContainer/Moar" unique_id=105065044]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_bwpqi")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control/Control/HBoxContainer/Moar/TextureRect" unique_id=1037841009]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 113.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "50 Can"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=2012547300]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("7_lewhx")
+
+[node name="Label" type="Label" parent="Control/TextureRect" unique_id=477817718]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 5.0
+offset_right = 83.0
+offset_bottom = 28.0
+text = "Can"
+
+[node name="Back" type="Button" parent="Control" unique_id=1078408180]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Back"
+
+[connection signal="pressed" from="Control/Control/HBoxContainer/Upgun" to="." method="_on_upgun_pressed"]
+[connection signal="pressed" from="Control/Control/HBoxContainer/Reduced" to="." method="_on_reduced_pressed"]
+[connection signal="pressed" from="Control/Control/HBoxContainer/Moar" to="." method="_on_moar_pressed"]
+[connection signal="pressed" from="Control/Back" to="." method="_on_back_pressed"]
