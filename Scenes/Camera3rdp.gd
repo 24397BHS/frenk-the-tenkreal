@@ -1,7 +1,5 @@
 extends Camera3D
-@export var defult_fov: float = 35.0
-@export var zoom_fov: float = 5.0
-@export var zoom_speed: float = 10.0
+
 @export var noise: FastNoiseLite
 @export var noise_speed: float = 30.0
 
@@ -10,7 +8,7 @@ extends Camera3D
 @export var max_roll: float = 0.1   # Tilting rotation max (radians)
 
 @export var decay: float = 2.0       # How fast the shake stops
-var is_zoomed: bool = false
+
 var trauma: float = 0.0              # Current shake intensity (0.0 to 1.0)
 var time: float = 0.0
 var initial_rotation: Vector3
@@ -52,13 +50,3 @@ func _process(delta: float) -> void:
 	else:
 		# Return to exactly default look rotation when done
 		rotation = initial_rotation
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-
-
-
-	if Input.is_action_just_pressed("Zoom"):
-		is_zoomed = !is_zoomed
-	var target_fov = zoom_fov if is_zoomed else defult_fov
-	fov = lerp(fov, target_fov, zoom_speed * delta)

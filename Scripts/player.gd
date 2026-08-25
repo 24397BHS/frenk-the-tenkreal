@@ -33,6 +33,8 @@ var is_scoping: bool = false
 @onready var playerIdleAudioStream = $AudioStreamPlayer_idle
 @onready var playerHitAudioStream = $AudioStreamPlayer_Hit
 @onready var pause_menu  = $CanvasLayer/PauseMenu
+
+
 var paused = false
 
 var target_yaw: float = 0.0
@@ -171,10 +173,12 @@ func fire():
 func take_damage(amount: float) -> void:
 	health -= amount
 	playerHitAudioStream.play()
-	
+	camera.add_shake(1.2)
+	scope.add_shake(1.0)
 	if health <= 0:
 		die()
 		
 func die() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	get_tree().change_scene_to_file("res://Scenes/lose.tscn")
+	
