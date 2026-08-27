@@ -21,7 +21,7 @@ var is_scoping: bool = false
  
 @onready var right_tread = $RightTread
 @onready var left_tread = $LeftTread
-@onready var camera = $"Body/Сombat_Tower/neck/Camera3D"
+@onready var camera = $"Body/Сombat_Tower/neck/Up down/Camera3D"
 @onready var scope = $"Body/Сombat_Tower/Rolling_ Armour_Mlya))/Camera3D"
 @onready var neck = $"Body/Сombat_Tower/neck"
 @onready var turret = $"Body/Сombat_Tower"
@@ -33,6 +33,7 @@ var is_scoping: bool = false
 @onready var playerIdleAudioStream = $AudioStreamPlayer_idle
 @onready var playerHitAudioStream = $AudioStreamPlayer_Hit
 @onready var pause_menu  = $CanvasLayer/PauseMenu
+@onready var updownview = $"Body/Сombat_Tower/neck/Up down"
 
 
 var paused = false
@@ -135,13 +136,13 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if is_free_looking:
 			neck.rotate_y(-event.relative.x * look)
-			camera.rotate_z(-event.relative.y * look)
-			camera.rotation.z = clamp(neck.rotation.z, deg_to_rad(-15), deg_to_rad(30))
+			updownview.rotate_z(-event.relative.y * look)
+			updownview.rotation.z = clamp(updownview.rotation.z, deg_to_rad(-15), deg_to_rad(30))
 		else:
 			turret.rotate_y(-event.relative.x * SENS)
 			manlet.rotate_z(-event.relative.y * ELEV)
 			manlet.rotation.z = clamp(manlet.rotation.z, deg_to_rad(-10), deg_to_rad(15))
-			camera.rotation.x = manlet.rotation.z
+			updownview.rotation.z = manlet.rotation.z
 			neck.rotation.y = 0
 	
 	elif event is InputEventMouseButton or InputEventKey:

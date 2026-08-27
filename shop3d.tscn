@@ -65,7 +65,7 @@ script = ExtResource("1_bwpqi")
 environment = SubResource("Environment_hkqtx")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1994762446]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+transform = Transform3D(-0.8852839, -0.46504387, 0.0025872055, 0.18028833, -0.3380683, 0.9236915, -0.4286824, 0.81819564, 0.3831284, 0, 0, 0)
 shadow_enabled = true
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=715483591]
@@ -86,12 +86,14 @@ render_target_update_mode = 4
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1389471449]
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=1231447624]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.41, -4.691)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.065, -0.41, -3.6467905)
 
 [node name="M4-76" parent="Marker3D" unique_id=518039939 instance=ExtResource("1_e2km4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.602)
 visible = false
 
 [node name="shermanfix" parent="Marker3D" unique_id=2105923708 instance=ExtResource("2_mljsy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.60238457)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=612949567]
 root_node = NodePath("../SubViewportContainer/SubViewport")
@@ -144,17 +146,27 @@ texture = ExtResource("3_hkqtx")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Control/Control/HBoxContainer/Upgun/TextureRect" unique_id=685721756]
+[node name="Label" type="Label" parent="Control/Control/HBoxContainer/Upgun/TextureRect" unique_id=358426859]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 113.0
-offset_bottom = 113.0
+offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "150 Can"
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.28627452, 1)
+text = "150"
 horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control/Control/HBoxContainer/Upgun/TextureRect/Label" unique_id=1907752633]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 4.0
+offset_right = 132.0
+offset_bottom = 44.0
+texture = ExtResource("7_lewhx")
 
 [node name="Reduced" type="Button" parent="Control/Control/HBoxContainer" unique_id=559094315]
 custom_minimum_size = Vector2(160, 100)
@@ -171,17 +183,27 @@ texture = ExtResource("4_hkqtx")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Control/Control/HBoxContainer/Reduced/TextureRect" unique_id=903339578]
+[node name="Label" type="Label" parent="Control/Control/HBoxContainer/Reduced/TextureRect" unique_id=1392360527]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 113.0
-offset_bottom = 113.0
+offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "100 Can"
+theme_override_colors/font_color = Color(0.28627452, 0.28627452, 0.28627452, 1)
+text = "100"
 horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control/Control/HBoxContainer/Reduced/TextureRect/Label" unique_id=1971593956]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 4.0
+offset_right = 132.0
+offset_bottom = 44.0
+texture = ExtResource("7_lewhx")
 
 [node name="Moar" type="Button" parent="Control/Control/HBoxContainer" unique_id=2025347643]
 custom_minimum_size = Vector2(160, 100)
@@ -204,11 +226,21 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 113.0
-offset_bottom = 113.0
+offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "50 Can"
+theme_override_colors/font_color = Color(0.28485027, 0.28485027, 0.28485027, 1)
+text = "50"
 horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control/Control/HBoxContainer/Moar/TextureRect/Label" unique_id=1462558301]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 4.0
+offset_right = 132.0
+offset_bottom = 44.0
+texture = ExtResource("7_lewhx")
 
 [node name="TextureRect" type="TextureRect" parent="Control" unique_id=2012547300]
 layout_mode = 0
@@ -233,6 +265,24 @@ offset_left = -45.0
 offset_bottom = 31.0
 grow_horizontal = 0
 text = "Back"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=86261794]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=416616637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1058197, -1.9216008, -4.017563)
+size = Vector3(12, 1, 8)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D" unique_id=1068570107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09667969, 6.8942432, -3.3811808)
+size = Vector3(11.970703, 12.78891, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D" unique_id=1794509946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4552174, 6.2007074, 0.13472581)
+size = Vector3(1, 12.713837, 7.416992)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1236083085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.93255, 4.9643927, -3.208496)
+size = Vector3(1, 12.713837, 7.416992)
 
 [connection signal="pressed" from="Control/Control/HBoxContainer/Upgun" to="." method="_on_upgun_pressed"]
 [connection signal="pressed" from="Control/Control/HBoxContainer/Reduced" to="." method="_on_reduced_pressed"]

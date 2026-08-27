@@ -909,7 +909,7 @@ transform = Transform3D(1, 2.9802326e-08, 0, -2.9802326e-08, 1, -7.105426e-15, 0
 mesh = SubResource("ArrayMesh_tnk8y")
 
 [node name="gunpoint_mlya)))" type="MeshInstance3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))" unique_id=1049205492]
-transform = Transform3D(1, -2.9802326e-08, 6.5135055e-16, 2.9802326e-08, 1, 9.70588e-24, -6.5135055e-16, 9.70588e-24, 1, 0.7375154, -0.047935203, 0.01754382)
+transform = Transform3D(1, -2.9802326e-08, 0, 2.9802326e-08, 1, -1.2434496e-14, 0, -1.065814e-14, 1, 0.73751533, -0.047935247, 0.01754382)
 mesh = SubResource("ArrayMesh_shltw")
 
 [node name="Bulletspawn" type="Node3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))/gunpoint_mlya)))" unique_id=307374516]
@@ -921,15 +921,18 @@ fov = 35.0
 script = ExtResource("3_glx4g")
 
 [node name="gunpoint_mlya)))2" type="MeshInstance3D" parent="Body/Сombat_Tower/Rolling_ Armour_Mlya))" unique_id=1520174982]
-transform = Transform3D(1, -2.9802326e-08, 1.4862206e-14, 2.9802326e-08, 1, -3.5527135e-15, -1.4862206e-14, 3.552714e-15, 1, 0.7375154, -0.047935225, 0.01754382)
+transform = Transform3D(1, -2.9802326e-08, 1.4210855e-14, 2.9802326e-08, 1, -8.881782e-15, -1.4210855e-14, 3.552715e-15, 1, 0.73751533, -0.047935247, 0.01754382)
 visible = false
 mesh = SubResource("ArrayMesh_yoq75")
 
 [node name="neck" type="Node3D" parent="Body/Сombat_Tower" unique_id=1248454130]
 transform = Transform3D(1, 0, 0, 0, 1, -1.4210854e-14, 0, 9.529125e-22, 1, -0.15390348, 0.49586362, 0.33184063)
 
-[node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/neck" unique_id=445545486]
-transform = Transform3D(-5.1380965e-08, 0, -1.1754595, 0, 1.1754593, 0, 1.1754595, 0, -5.1380965e-08, 0, 0, 0)
+[node name="Up down" type="Node3D" parent="Body/Сombat_Tower/neck" unique_id=2034514476]
+transform = Transform3D(1, 0, 0, 0, 1, 1.0800097e-21, 0, 9.529125e-22, 1, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Body/Сombat_Tower/neck/Up down" unique_id=445545486]
+transform = Transform3D(-5.1380965e-08, -4.2351647e-22, -1.1754596, -7.1054265e-15, 1.1754594, -8.3549043e-16, 1.1754596, 3.1974423e-14, -5.1380965e-08, 0, 0, 0)
 fov = 52.09617
 script = ExtResource("4_glx4g")
 
