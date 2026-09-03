@@ -5,7 +5,7 @@ func _process(delta: float) -> void:
 	Can.text = str(Global.can)
 
 func _on_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
 
 
 func _on_tutorial_pressed() -> void:
